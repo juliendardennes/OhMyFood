@@ -1,3 +1,4 @@
+/*--------------responsive desktop----------*/
 body a {
     text-decoration: none;
     color: black;
@@ -13,8 +14,18 @@ h1,
 body {
     font-family: 'Roboto', sans-serif;
 }
+/*------------logo----------*/
 header .logo {
-    margin-left: 40%;
+    width: 60%;
+    margin-left: 20%;
+}
+/*--fleche de retour sur les cartes menus---*/
+.contenaireentete .fa-arrow-left {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+    padding-right: 3em;
+    margin-left: 1em;
 }
 /*----------------localisation---------------*/
 .formulaire/*zonedetexte*/ {
@@ -31,8 +42,15 @@ header .logo {
 ::placeholder {
     padding-left: 1em;
 }
-/*----------------menu------------------*/
-.explorer li/*bouton explorer*/ {
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+.explorer p {
+    text-align: center;
+}
+/*----------------bouton explorer------------------*/
+.explorer li {
     border-radius: 45px;
     color: white;
     font-size: 1.3em;
@@ -46,6 +64,7 @@ header .logo {
 .explorer li:hover {
     box-shadow: 0 0 20px #9356DC;
 }
+/*------filtres--de--fonctionnement---*/
 .filtres li/*----filtres----*/ {
     background-color: #F6F6F6;
     margin-left: 1em;
@@ -72,6 +91,9 @@ header .logo {
     margin-right: 1em;
     font-size: 1.2em;
 }
+.i:hover {
+    background: linear-gradient(#FF79DA, #9356DC);
+}
 /*--------------restaurants---------------*/
 aside {
     background-color: #F6F6F6;
@@ -90,11 +112,11 @@ aside h2 {
     display: inline-block;
 }
 .vignettesrestaurants i {
-    padding-left: 7em;
+    padding-left: 25%;
 }
 .vignettesrestaurants h3 {
     margin-top: 5px;
-    margin-bottom: -10px;
+    margin-bottom: -30px;
     margin-left: 1em;
 }
 .vignettesrestaurants p {
@@ -110,8 +132,14 @@ aside h2 {
     background-color: white;
     margin-left: 1.2em;
     margin-bottom: 1em;
-    width: 20%;
+    width: 22%;
     height: auto;
+}
+.lapalettedugout:hover,
+.lanoteenchantee:hover,
+.alafrançaise:hover,
+.ledelicedessens:hover {
+    box-shadow: 0 0 20px #9356DC;
 }
 .nouveauresto {
     display: inline-block;
@@ -123,12 +151,100 @@ aside h2 {
     z-index: 1;
     position: absolute;
     top: 0;
-    left: 70%;
+    left: 50%;
     padding: 0.5em 1em 0.5em 1em;
-
 }
-.i:hover {
+/*--------pied de page---------*/
+.colonne {
+    background-color: #353535;
+    width: 100%;
+    height: 14em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+.colonne h3 {
+    color: white;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.fa-utensils,
+.fa-hands-helping {
+    color: white;
+    margin-right: 1em;
+}
+.lienfooter a {
+    color: white;
+}
+.lienfooter li {
+    margin: 1em;
+}
+/*------------------------------------*/
+/*-----cartes des menus des restaurants---*/
+/*-----------------desktop----------------*/
+
+section img/*photo cartes resto*/ {
+    width: 50%;
+    height: auto;
+    margin-left: 20%;
+    border-radius: 15% 15% 0 0;
+}
+.carterestaurant {
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 55px 55px 0 0;
+    position: relative;
+    top: -3em;
+    padding-left: 0.7em;
+    padding-bottom: 5em;
+    padding-top: 1em;
+}
+.carterestaurant h2 {
+    border-bottom: 3px solid #99E2D0;
+    width: 2em;
+}
+.fa-heart /*logo coeur*/ {
+    margin-left: 7em;
+}
+.plat {
+    width:95%;
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0000002e;
+    padding-left: 0.5em;
+}
+.plat h3 {
+    padding-top: 0.5em; 
+}
+.plat h4 {
+    margin-top: -0.7em;
+    padding-bottom: 0.7em;
+    font-size: 14px;
+}
+.plat p /*---tarif----*/ {
+    position: absolute;
+    right: 5em;
+    top: 11em;
+}
+.commander li {
+    border-radius: 45px;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding: 0.8em;
     background: linear-gradient(#FF79DA, #9356DC);
+    text-align: center;
+}
+/*-----------------------------------------*/
+/*----------responsive tablette------------*/
+
+@media screen and (min-width: 481px) and (max-width: 1120px) {
+    .vignettesrestaurants {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 /*-------------------------------------*/
 /*----------responsive mobile----------*/
@@ -138,7 +254,6 @@ aside h2 {
     /*-----------En tete de page----------*/
     header .logo {
         max-width: 50%;
-        margin-left: 30%;
     }
     .contenaireentete {
         display: flex;
@@ -149,22 +264,16 @@ aside h2 {
        height: auto;
     }
     .contenaireentete .fa-arrow-left {
-        display: flex;
-        flex-wrap: wrap;
         font-size: 1.2em;
-        padding-right: 3em;
         padding-top: 0.5em;
-        margin-left: 1em;
     }
     /*--------localisation--------*/
     .fa-map-marker-alt/*icone localisation*/ {
-        position: absolute;
         margin-left: 35%;
     }
     ::placeholder {
         padding-left: 40%;
     }
-    
     /*------------Explorer--------*/
     .explorer {
         background-color: #F6F6F6;
@@ -183,13 +292,10 @@ aside h2 {
     .explorer a {
         color: white;
     }
-    
     /*-------fonctionnement--------*/
     article h2 {
         margin-top: 2em;
     }
-    
-    
     /*-------restaurants----------*/
     aside {
         background-color: #F6F6F6;
@@ -212,7 +318,6 @@ aside h2 {
     }
     .vignettesrestaurants h3 {
         margin-top: 5px;
-        margin-bottom: -10px;
         margin-left: 1em;
     }
     .vignettesrestaurants p {
@@ -222,11 +327,6 @@ aside h2 {
     .lanoteenchantee,
     .alafrançaise,
     .ledelicedessens {
-        border-radius: 20px;
-        box-shadow: 0 0 20px #0000002e;
-        background-color: white;
-        margin-left: 1.2em;
-        margin-bottom: 1em;
         width: 90%;
     }
     .nouveauresto {
@@ -241,85 +341,19 @@ aside h2 {
         top: 0;
         left: 70%;
         padding: 0.5em 1em 0.5em 1em;
+    }
+    .carterestaurant h1 {
+        margin-right: 5em;
+        font-size: 25px;
+    }
+    .carterestaurant i /*--coeur--*/ {
+        position: absolute;
+        left: 40%;
+    }
 
-    }
-    .i:hover {
-        background: linear-gradient(#FF79DA, #9356DC);
-    }
-    /*---------pied de page -------*/
-    .colonne {
-        background-color: #353535;
-        width: 100%;
-        height: 14em;
-        margin-top: 0;
-        padding-top: 1em;
-    }
-    .colonne h3 {
-        color: white;
-        margin-left: 1em;
-        font-size: 1.5em;
-    }
+
     
-    .fa-utensils,
-    .fa-hands-helping {
-        color: white;
-        margin-right: 1em;
-    }
-    .lienfooter a {
-        color: white;
-    }
-    .lienfooter li {
-        margin: 1em;
-    }
-/*-------------------------------------------*/
-/*-------carte des menus des restaurants------*/
-/*--------------------------------------------*/
-
-    img/*photo du resto*/ {
-        width: 100%;
-    }
-    .carterestaurant {
-        width: 100%;
-        background-color: #F6F6F6;
-        border-radius: 55px 55px 0 0;
-        position: relative;
-        top: -3em;
-        padding-left: 0.7em;
-        padding-bottom: 5em;
-        padding-top: 1em;
-    }
-    .carterestaurant h2 {
-        border-bottom: 3px solid #99E2D0;
-        width: 2em;
-    }
-    .fa-heart /*logo coeur*/ {
-        margin-left: 7em;
-    }
-    .plat {
-        width:95%;
-        background-color: white; 
-        border-radius: 15px;
-        box-shadow: 0 0 20px #0000002e;
-        padding-left: 0.5em;
-    }
-    .plat h3 {
-        padding-top: 0.5em; 
-    }
-    .plat h4 {
-        margin-top: -0.7em;
-        padding-bottom: 0.7em;
-    }
-    .commander li {
-        border-radius: 45px;
-        color: white;
-        font-size: 1.3em;
-        margin-top: 2em;
-        margin-left: 4em;
-        margin-right: 4em;
-        padding: 0.8em;
-        background: linear-gradient(#FF79DA, #9356DC);
-        text-align: center;
-    }
+    
 }
 
 
