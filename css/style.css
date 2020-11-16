@@ -130,9 +130,35 @@ aside h2 {
 .i:hover {
     background: linear-gradient(#FF79DA, #9356DC);
 }
-/*-------------------------------------*/
-/*----------responsive mobile----------*/
-/*-------------------------------------*/
+/*--------------------pied de page ------------*/
+.colonne {
+    background-color: #353535;
+    width: 100%;
+    height: 14em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+.colonne h3 {
+    color: white;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.fa-utensils,
+.fa-hands-helping {
+    color: white;
+    
+    margin-right: 1em;
+}
+.lienfooter a {
+    color: white;
+}
+.lienfooter li {
+    margin: 1em;
+}
+/*-------------------------------------------------------------*/
+/*---------------------responsive mobile-----------------------*/
+/*------------------------------------------------------------*/
 
 @media screen and (max-width: 480px) {
     /*-----------En tete de page----------*/
