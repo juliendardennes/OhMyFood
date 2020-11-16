@@ -262,7 +262,8 @@ aside h2 {
     
     .fa-utensils,
     .fa-hands-helping {
-        color: white;
+        color: red;
+        
         margin-right: 1em;
     }
     .lienfooter a {
