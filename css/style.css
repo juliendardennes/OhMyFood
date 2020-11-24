@@ -102,22 +102,39 @@ aside h2 {
 }
 .vignettesrestaurants h3 {
     margin-top: 5px;
-    margin-bottom: -10px;
     margin-left: 1em;
 }
 .vignettesrestaurants p {
-    text-align: initial;
+    text-align: left;
+    margin-top: -1em;
     margin-left: 1em;
 }
-.vignettesrestaurants .fa-heart {
-    padding-right: 5em;
-    margin-left: 13em;
-    margin-right: 0.5em;
+.coeurvide .fa-heart {
+    opacity: 0.7;
+    position: absolute;
+    left: 80%; bottom: 10%;
+    font-size: 1.5em;
+}
+.coeurvide .fa-heart:hover {
+    opacity: 0;
+}
+.coeurplein .fa-heart {
+    opacity: 0;
+    font-size: 1.6em;
+    position: absolute;
+    left: 80%; bottom: 10%;
+}
+.coeurplein .fa-heart:hover {
+    opacity: 1;
+    background: linear-gradient(to bottom,#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .lapalettedugout,
 .lanoteenchantee,
-.alafrançaise,
+.alafrancaise,
 .ledelicedessens {
+    position: relative;
     border-radius: 20px;
     box-shadow: 0 0 20px #0000002e;
     background-color: white;
@@ -129,14 +146,11 @@ aside h2 {
     background-color: #99E2D0;
     color: #008766;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    margin-left: 15%;
+    margin-left: 65%;
+    margin-top: 1em;
     position: absolute;
-    z-index: 1;
 }
-.i:hover {
-    background-color: linear-gradient(#FF79DA, #9356DC);
-}
-/*-----------------------pied de page -----------------*/
+/*---------------pied de page -----------------*/
 .colonne {
     background-color: #353535;
     width: 100%;
