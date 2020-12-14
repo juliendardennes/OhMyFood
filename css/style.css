@@ -137,7 +137,15 @@ article h2 {
     bottom: 6%;
     color: black;
 }
-.icone-plein:hover {
+.icone-plein {
+    opacity: 0;
+    position: absolute;
+    font-size: 4em;
+    left: 85%;
+    bottom: 6%;
+}
+.icone-plein:active {
+    opacity: 1;
     position: absolute;
     font-size: 4em;
     left: 85%;
@@ -148,14 +156,14 @@ article h2 {
 }
 .colonne {
     background-color: #353535;
-    padding-top: 1em;
     padding-bottom: 7em;
 }
 .colonne h3 {
     color: white;
     margin-left: 3em;
     padding-top: 2em;
-    font-size: 1.8em;
+    font-size: 2em;
+    font-weight: normal;
 } 
 .colonne a { 
     color: white;
@@ -188,6 +196,7 @@ section img {
 }
 .carte-restaurant {
     width: 100%;
+    position: relative;
     background-color: #F6F6F6;
     border-radius: 10em 10em 0 0;
     padding: 1em 0 5em 0.7em;
@@ -203,6 +212,7 @@ section img {
     font-size: 3em;
     border-bottom: 3px solid #99E2D0;
     width: 10%;
+    margin-top: 2em;
 } 
 .plat {
     width: 95%;
@@ -210,19 +220,17 @@ section img {
     border-radius: 35px;
     box-shadow: 0 0 20px #0000002e;
     padding-left: 2em;
+    padding-bottom: 1em;
     transition-property: background-color;
     transition-duration: 0.5s;
 }
-.plat:hover {
-    background-color: #99E2D0;
-}
 .plat h3 {
-    padding-top: 0.5em;
     font-size: 2em;
+    padding-top: 0.5em;
 }
 .plat h4 {
-    margin-top: -0.7em;
-    padding-bottom: 0.7em;
+    margin-top: -1em;
+    font-size: 0.9em;
 }
 .tarif {
     font-size: 3em;
@@ -236,8 +244,5 @@ section img {
     margin: 8em 10em 9em 10em;
     background: linear-gradient(#FF79DA, #9356DC);
     text-align: center;
-}
-.commander a {
     color: white;
-    font-size: 3em;
 }
