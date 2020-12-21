@@ -1,0 +1,27 @@
+.pied-de-page {
+  background-color: green;
+  padding-bottom: 7em;
+}
+
+.pied-de-page h3 {
+  color: #fff;
+  margin-left: 3em;
+  padding-top: 2em;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.pied-de-page a {
+  color: #fff;
+}
+
+.pied-de-page li {
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.pied-de-page i {
+  color: #fff;
+  padding-right: 3em;
+}
+/*# sourceMappingURL=footer.css.map */

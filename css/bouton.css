@@ -1,0 +1,14 @@
+.bouton {
+  border-radius: 85px;
+  margin: 5em 10em;
+  padding: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
+}
+
+.bouton a {
+  color: #fff;
+  font-weight: bold;
+}
+/*# sourceMappingURL=bouton.css.map */

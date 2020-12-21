@@ -1,0 +1,19 @@
+$white: #fff;
+
+.bouton {
+  border-radius: 85px;
+  margin: 5em 10em;
+  padding: 2em;
+  background: linear-gradient(#FF79da, #9356dc);
+  text-align: center;
+}
+.bouton:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 20px #9356DC;
+}
+.bouton a {
+    color: $white;
+    font-weight: bold;
+  }
+  
+  

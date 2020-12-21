@@ -1,59 +1,4 @@
-.bouton {
-  border-radius: 85px;
-  margin: 5em 10em;
-  padding: 2em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  text-align: center;
-}
-
-.bouton a {
-  color: white;
-  font-weight: bold;
-}
-
-body {
-  font-family: 'roboto' , sans-serif;
-}
-
-body a {
-  text-decoration: none;
-}
-
-body li {
-  list-style: none;
-}
-
-h1, .pied-de-page h3 {
-  font-family: 'shrikhand' , cursive;
-}
-
-.bouton:hover {
-  opacity: 0.9;
-  -webkit-box-shadow: 0 0 20px #9356DC;
-          box-shadow: 0 0 20px #9356DC;
-}
-
-.fonctionnement li:hover {
-  background: #D8BFD8;
-  -webkit-transition: background 0.6s;
-  transition: background 0.6s;
-  -webkit-box-shadow: 0 0 20px #D8BFD8;
-          box-shadow: 0 0 20px #D8BFD8;
-}
-
-.icone-plein:hover {
-  opacity: 1;
-  position: absolute;
-  font-size: 4em;
-  left: 85%;
-  bottom: 6%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+@charset "UTF-8";
 header .logo {
   margin-left: 20%;
   width: 40em;
@@ -75,11 +20,46 @@ header .logo {
   padding-bottom: 2em;
 }
 
+body {
+  font-family: 'roboto' , sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+h1, .pied-de-page h3 {
+  font-family: 'shrikhand' , cursive;
+}
+
+.bouton {
+  border-radius: 85px;
+  margin: 5em 10em;
+  padding: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79da), to(#9356dc));
+  background: linear-gradient(#FF79da, #9356dc);
+  text-align: center;
+}
+
+.bouton:hover {
+    opacity: 0.9;
+    box-shadow:  0 0 20px  #9356DC;
+}
+
+.bouton a {
+  color: #fff;
+  font-weight: bold;
+}
+
 .formulaire {
   width: 100%;
   height: 7em;
-  background-color: #EAEAEA;
-  border: 1px solid #EAEAEA;
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
   border-top: 2px solid grey;
 }
 
@@ -119,7 +99,7 @@ header .logo {
 }
 
 section {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-bottom: 2em;
 }
 
@@ -139,7 +119,7 @@ article h2 {
 }
 
 .fonctionnement li {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin: 1em 3em 0em 3em;
   border-radius: 30px;
   padding: 3.5em 0;
@@ -167,11 +147,11 @@ article h2 {
   padding: 1.5em;
   font-size: 13px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 #restaurants {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin-top: 8em;
   padding-bottom: 7em;
 }
@@ -196,12 +176,12 @@ article h2 {
   position: relative;
   background-color: white;
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 20px #0000002E;
-          box-shadow: 0 0 20px #0000002E;
+  -webkit-box-shadow: 0 0 20px #0000002e;
+          box-shadow: 0 0 20px #0000002e;
 }
 
 .nouveaute p {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
   padding: 0.5em;
   position: absolute;
@@ -251,7 +231,7 @@ section img {
   top: 30em;
   margin-bottom: 30em;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 10em 10em 0 0;
   padding: 1em 0 4em 0.7em;
 }
@@ -267,7 +247,7 @@ section img {
 
 .carte-restaurant h2 {
   font-size: 3em;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 10%;
   margin-top: 2em;
 }
@@ -304,7 +284,7 @@ section img {
 }
 
 .pied-de-page h3 {
-  color: white;
+  color: #fff;
   margin-left: 3em;
   padding-top: 2em;
   font-size: 2em;
@@ -312,7 +292,7 @@ section img {
 }
 
 .pied-de-page a {
-  color: white;
+  color: #fff;
 }
 
 .pied-de-page li {
@@ -321,7 +301,7 @@ section img {
 }
 
 .pied-de-page i {
-  color: white;
+  color: #fff;
   padding-right: 3em;
 }
 /*# sourceMappingURL=style.css.map */
