@@ -1,27 +1,44 @@
+
 #restaurants {
-  background-color: grey;
+  background-color: #eaeaea;
   margin-top: 8em;
   padding-bottom: 7em;
+  @media (min-width: 64em) {
+    margin-top: 4em;
+  }
 }
+
 #restaurants h2 {
   padding-top: 3em;
   margin-left: 2em;
   margin-bottom: 3em;
 }
-.restaurants img {
+
+.vignette-restaurant img {
   width: 100%;
-  height: 30em;
+  height: 22em;
   object-fit: cover;
   border-radius: 30px 30px 0 0;
+  @media (min-width: 64em) {
+    height: 10em;
+  }
 }
+
 .vignette-restaurant {
   width: 90%;
   margin-left: 3em;
+  margin-bottom: 3em;
   position: relative;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 0 20px #0000002e;
+  @media (min-width: 64em) {
+    display: inline-block;
+    width: 20%;
+    height: 15em;
+  }
 }
+
 .nouveaute p {
   background-color: #99e2d0;
   color: #008766;
@@ -29,32 +46,48 @@
   position: absolute;
   font-size: 3em;
   margin-left: 65%;
+  @media (min-width: 64em) {
+    font-size: 1em;
+  }
 }
+
 .vignette-restaurant h3 {
   margin-top: 0.5em;
-  margin-left: 2em;
+  margin-left: 1.5em;
   color: black;
 }
+
 .vignette-restaurant h4 {
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-top: -1em;
   padding-bottom: 2em;
   color: black;
   font-weight: normal;
 }
+ 
 .icone-vide {
-  position: absolute;
   font-size: 4em;
+  position: absolute;
   left: 85%;
-  bottom: 6%;
+  bottom: 10%;
   color: black;
+  @media (min-width: 64em) {
+    font-size: 2em;
+  }
+  &:hover {
+    opacity: 0;
+  }
 }
+
 .icone-plein {
   opacity: 0;
   position: absolute;
   font-size: 4em;
   left: 85%;
-  bottom: 6%;
+  bottom: 10%;
+  @media (min-width: 64em) {
+    font-size: 2em;
+  }
   &:hover {
     transition: all 0.2s linear 0.2s;
     opacity: 1;

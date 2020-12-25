@@ -2,6 +2,12 @@ section img {
   width: 100%;
   position: absolute;
   z-index: 0;
+  @media (min-width: 64em) {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    position: none;
+  }
 }
 
 .carte-restaurant {
@@ -20,8 +26,25 @@ section img {
   margin-left: 0.5em;
 }
 
-.carte-restaurant .fa-heart {
-  margin-left: 20%;
+.icone-menu-vide {
+  position: absolute;
+  margin-left: 15%;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.icone-menu-plein {
+  position:absolute;
+  margin-left: 15%;
+  opacity: 0;
+  &:hover {
+    transition: all 0.2s linear 0.2s;
+    opacity: 1;
+    background: linear-gradient(to bottom, #FF79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .carte-restaurant h2 {
