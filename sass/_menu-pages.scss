@@ -1,13 +1,7 @@
 section img {
-  width: 100%;
+  width: 99%;
   position: absolute;
   z-index: 0;
-  @media (min-width: 64em) {
-    width: 60%;
-    height: auto;
-    margin-left: 20%;
-    position: none;
-  }
 }
 
 .carte-restaurant {
@@ -15,20 +9,28 @@ section img {
   z-index: 1;
   top: 30em;
   margin-bottom: 30em;
-  width: 100%;
+  width: 99%;
   background-color: #f6f6f6;
   border-radius: 10em 10em 0 0;
   padding: 1em 0 4em 0.7em;
-}
-
-.carte-restaurant h1 {
-  font-size: 4em;
-  margin-left: 0.5em;
+  h1 {
+    font-size: 4em;
+    margin-left: 0.5em;
+  }
+  h2 {
+    font-size: 3em;
+    border-bottom: 3px solid #99e2d0;
+    width: 10%;
+    margin-top: 2em;
+  }
 }
 
 .icone-menu-vide {
   position: absolute;
   margin-left: 15%;
+  @media (min-width: 64em) {
+    margin-left: 25%;
+  }
   &:hover {
     opacity: 0;
   }
@@ -38,6 +40,9 @@ section img {
   position:absolute;
   margin-left: 15%;
   opacity: 0;
+  @media (min-width: 64em) {
+    margin-left: 25%;
+  }
   &:hover {
     transition: all 0.2s linear 0.2s;
     opacity: 1;
@@ -47,13 +52,6 @@ section img {
   }
 }
 
-.carte-restaurant h2 {
-  font-size: 3em;
-  border-bottom: 3px solid #99e2d0;
-  width: 10%;
-  margin-top: 2em;
-}
-
 .plat {
   width: 95%;
   background-color: white;
@@ -61,20 +59,24 @@ section img {
   box-shadow: 0 0 20px #0000002e;
   padding-left: 2em;
   padding-bottom: 1em;
-}
-
-.plat h3 {
-  font-size: 2em;
-  padding-top: 0.5em;
-}
-
-.plat h4 {
-  margin-top: -1em;
-  font-size: 0.9em;
+  h3 {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+  h4 {
+    margin-top: -1em;
+    font-size: 0.9em;
+    @media (min-width: 64em) {
+      font-size: 1.5em;
+    }
+  }
 }
 
 .tarif {
   font-size: 3em;
   position: absolute;
   right: 1em;
+  @media (min-width: 64em) {
+    font-size: 1.5em;
+  }
 }
