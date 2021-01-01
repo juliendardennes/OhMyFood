@@ -64,15 +64,14 @@ section {     /*partie descriptif*/
 }
 
 .explorer h1 {
+  margin: 2em;
   text-align: center;
-  font-size: 4em;
-  @media (min-width: 1024px) {
-    font-size: 2em;
-  }
+  font-size: 2em;
 }
 
 .explorer p {
   text-align: center;
+  margin: 2em;
   @media (min-width: 1024px) {
     font-size: 1.2em;
   }

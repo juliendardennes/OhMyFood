@@ -264,18 +264,14 @@ section {
 }
 
 .explorer h1 {
+  margin: 2em;
   text-align: center;
-  font-size: 4em;
-}
-
-@media (min-width: 1024px) {
-  .explorer h1 {
-    font-size: 2em;
-  }
+  font-size: 2em;
 }
 
 .explorer p {
   text-align: center;
+  margin: 2em;
 }
 
 @media (min-width: 1024px) {
