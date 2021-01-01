@@ -1,5 +1,6 @@
 section img {
   width: 99%;
+  object-fit: cover;
   position: absolute;
   z-index: 0;
   @media (min-width: 1024px) {
@@ -40,7 +41,7 @@ section img {
 
 .icone-vide-menu {
   position: absolute;
-  margin-left: 14%;
+  margin-left: 12%;
   bottom: 95%;
   @media (min-width: 1024px) {
     left: 70%;
@@ -52,13 +53,13 @@ section img {
 }
 .icone-plein-menu {
   position:absolute;
-  margin-left: 14%;
-  bottom: 95%;
+  margin-left: 11.5%;
+  bottom: 94.7%;
   opacity: 0;
-  font-size: 1.1em;
+  font-size: 1.3em;
   @media (min-width: 1024px) {
-    left: 69.8%;
-    bottom: 94.9%;
+    left: 70%;
+    bottom: 94.7%;
   }
   &:hover {
     transition: all 0.2s linear 0.2s;
@@ -81,11 +82,12 @@ section img {
   -webkit-animation: 1.2s menu-delay ease-in-out ;
   @media (min-width: 1024px) {
     width: 50%;
-  }
+    }
   }
 
 @keyframes menu-delay { /*animation apparation des plats*/
   0% {
+    visibility: hidden;
     opacity: 0;
   }
   100% {
@@ -126,17 +128,20 @@ section img {
 .plat h3 {
   font-size: 2em;
   padding-top: 0.5em;
+  font-weight: bolder;
   @media (min-width: 1024px) {
     font-size: 1.3em;
   }
 }
 h4 {
   margin-top: -1em;
-  font-size: 0.8em;
+  margin-right: 20%;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 .tarif {
-  font-size: 3em;
+  font-size: 3.5em;
   position: absolute;
   right: 1em;
   @media (min-width: 1024px) {
