@@ -1,4 +1,4 @@
-body {
+body h1 {
   font-family: 'roboto' , sans-serif;
 }
 
@@ -10,7 +10,7 @@ body li {
   list-style: none;
 }
 
-h1, .pied-de-page h3 {
+.pied-de-page h3 {
   font-family: 'shrikhand' , cursive;
 }
 
@@ -18,8 +18,7 @@ h1, .pied-de-page h3 {
   position: absolute;
   width: 99%;
   height: 100%;
-  background-color: #000;
-  color: black;
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,15 +28,30 @@ h1, .pied-de-page h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  animation: 4s accueil forwards;
+  pointer-events: none;
+  -webkit-animation: 4s accueil forwards;
+}
+
+@-webkit-keyframes accueil {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes accueil {
+  100% {
+    opacity: 0;
+  }
 }
 
 .lettre {
   color: #9356dc;
   font-size: 90px;
   letter-spacing: 25px;
-  font-family: 'shrikhand';
-  animation: flash 3s linear infinite;
-  -webkit-animation: flash 1.2s linear infinite;
+  font-family: 'shrikhand' , cursive;
+  animation: 1s flash linear infinite;
+  -webkit-animation: 1s flash linear infinite;
 }
 
 @-webkit-keyframes flash {
@@ -112,7 +126,14 @@ h1, .pied-de-page h3 {
 
 .pied-de-page {
   background-color: #353535;
+  padding-top: 2em;
   padding-bottom: 7em;
+}
+
+@media (min-width: 1024px) {
+  .pied-de-page {
+    padding-bottom: 1em;
+  }
 }
 
 .pied-de-page h3 {
@@ -121,6 +142,12 @@ h1, .pied-de-page h3 {
   padding-top: 2em;
   font-size: 2em;
   font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .pied-de-page h3 {
+    padding-top: 0.1em;
+  }
 }
 
 .pied-de-page a {
@@ -142,6 +169,13 @@ header .logo {
   width: 40em;
 }
 
+@media (min-width: 1024px) {
+  header .logo {
+    width: 15em;
+    margin-left: 35%;
+  }
+}
+
 .fa-arrow-left {
   /*uniquement menu resto*/
   position: absolute;
@@ -153,13 +187,14 @@ header .logo {
 }
 
 .contenaire-en-tete .logo {
+  /*menu des restaurants */
   margin-left: 20%;
   margin-top: 2em;
   width: 50%;
   padding-bottom: 2em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .contenaire-en-tete .logo {
     width: 20em;
     margin-left: 40%;
@@ -169,21 +204,39 @@ header .logo {
 section {
   /*partie descriptif*/
   background-color: #f6f6f6;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 
 .formulaire {
+  /*recherche en fonction de la ville*/
   width: 100%;
-  height: 7em;
+  height: 8em;
+  margin-top: -2em;
+  text-align: center;
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
-  border-top: 2px solid grey;
+  border-top: 1px solid grey;
+}
+
+@media (min-width: 1024px) {
+  .formulaire {
+    height: 4em;
+  }
 }
 
 .fa-map-marker-alt {
   position: relative;
-  top: 1.2em;
+  margin-left: 30%;
+  top: 1em;
   font-size: 3.5em;
+}
+
+@media (min-width: 1024px) {
+  .fa-map-marker-alt {
+    top: 0.5em;
+    font-size: 2.5em;
+    margin-left: 35%;
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -213,16 +266,21 @@ section {
 .explorer h1 {
   text-align: center;
   font-size: 4em;
-  margin: 8% 10% 4% 10%;
+}
+
+@media (min-width: 1024px) {
+  .explorer h1 {
+    font-size: 2em;
+  }
 }
 
 .explorer p {
   text-align: center;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .explorer p {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 }
 
@@ -240,10 +298,12 @@ section {
   font-weight: bold;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .bouton {
-    width: 30%;
-    margin-left: 30%;
+    width: 15%;
+    margin-left: 40%;
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
 }
 
@@ -257,17 +317,24 @@ article h2 {
   margin-top: 4em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
+  article h2 {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 10%;
   }
 }
 
 .fonctionnement li {
   background-color: #eaeaea;
+  -webkit-box-shadow: 0 0 20px #0c0c0c2e;
+          box-shadow: 0 0 20px #0c0c0c2e;
   margin: 1em 3em 0em 3em;
   border-radius: 30px;
   padding: 3.5em 0;
@@ -275,7 +342,7 @@ article h2 {
   font-size: 0.9em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .fonctionnement li {
     width: 80%;
     padding: 1em;
@@ -284,6 +351,8 @@ article h2 {
 }
 
 .fonctionnement li:hover {
+  -webkit-box-shadow: 0 0 20px #e4c7dc;
+          box-shadow: 0 0 20px #e4c7dc;
   background-color: #e4c7dc;
 }
 
@@ -292,7 +361,7 @@ article h2 {
   margin-right: 4em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .fonctionnement i {
     margin: 0.5em;
     font-size: 2em;
@@ -304,9 +373,10 @@ article h2 {
   margin-left: 5em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .fonctionnement a {
-    margin-left: 1em;
+    margin-left: 0.1em;
+    width: 40%;
   }
 }
 
@@ -315,13 +385,13 @@ article h2 {
   display: inline;
   margin-left: -20px;
   margin-right: 5em;
-  padding: 1.5em;
+  padding: 1em;
   font-size: 13px;
   border-radius: 50%;
   background-color: #9356dc;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .numero {
     margin-right: 1em;
   }
@@ -331,6 +401,12 @@ section img {
   width: 99%;
   position: absolute;
   z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  section img {
+    height: 40em;
+  }
 }
 
 .carte-restaurant {
@@ -344,9 +420,22 @@ section img {
   padding: 1em 0 4em 0.7em;
 }
 
+@media (min-width: 1024px) {
+  .carte-restaurant {
+    border-radius: 5em 5em 0 0;
+  }
+}
+
 .carte-restaurant h1 {
+  font-family: 'shrikhand' , cursive;
   font-size: 4em;
   margin-left: 0.5em;
+}
+
+@media (min-width: 1024px) {
+  .carte-restaurant h1 {
+    font-size: 2.5em;
+  }
 }
 
 .carte-restaurant h2 {
@@ -356,34 +445,45 @@ section img {
   margin-top: 2em;
 }
 
-.icone-menu-vide {
-  position: absolute;
-  margin-left: 15%;
-}
-
-@media (min-width: 64em) {
-  .icone-menu-vide {
-    margin-left: 25%;
+@media (min-width: 1024px) {
+  .carte-restaurant h2 {
+    font-size: 1.7em;
   }
 }
 
-.icone-menu-vide:hover {
-  opacity: 0;
-}
-
-.icone-menu-plein {
+.icone-vide-menu {
   position: absolute;
-  margin-left: 15%;
-  opacity: 0;
+  margin-left: 14%;
+  bottom: 95%;
 }
 
-@media (min-width: 64em) {
-  .icone-menu-plein {
-    margin-left: 25%;
+@media (min-width: 1024px) {
+  .icone-vide-menu {
+    left: 70%;
+    bottom: 95%;
   }
 }
 
-.icone-menu-plein:hover {
+.icone-vide-menu:hover {
+  opacity: 0;
+}
+
+.icone-plein-menu {
+  position: absolute;
+  margin-left: 14%;
+  bottom: 95%;
+  opacity: 0;
+  font-size: 1.1em;
+}
+
+@media (min-width: 1024px) {
+  .icone-plein-menu {
+    left: 69.8%;
+    bottom: 94.9%;
+  }
+}
+
+.icone-plein-menu:hover {
   -webkit-transition: all 0.2s linear 0.2s;
   transition: all 0.2s linear 0.2s;
   opacity: 1;
@@ -394,13 +494,92 @@ section img {
 }
 
 .plat {
+  position: relative;
   width: 95%;
   background-color: white;
   border-radius: 35px;
   -webkit-box-shadow: 0 0 20px #0000002e;
           box-shadow: 0 0 20px #0000002e;
   padding-left: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 0.1em;
+  animation: 1.2s menu-delay ease-in-out;
+  -webkit-animation: 1.2s menu-delay ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .plat {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes menu-delay {
+  /*animation apparation des plats*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-delay {
+  /*animation apparation des plats*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.plat:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.plat:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.plat:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.plat:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.plat:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.plat:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.plat:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.plat:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.plat:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.plat:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .plat h3 {
@@ -408,15 +587,15 @@ section img {
   padding-top: 0.5em;
 }
 
-.plat h4 {
-  margin-top: -1em;
-  font-size: 0.9em;
+@media (min-width: 1024px) {
+  .plat h3 {
+    font-size: 1.3em;
+  }
 }
 
-@media (min-width: 64em) {
-  .plat h4 {
-    font-size: 1.5em;
-  }
+h4 {
+  margin-top: -1em;
+  font-size: 0.8em;
 }
 
 .tarif {
@@ -425,7 +604,7 @@ section img {
   right: 1em;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .tarif {
     font-size: 1.5em;
   }
@@ -434,7 +613,14 @@ section img {
 #restaurants {
   background-color: #eaeaea;
   margin-top: 8em;
-  padding-bottom: 7em;
+  padding-bottom: 6em;
+}
+
+@media (min-width: 1024px) {
+  #restaurants {
+    margin-top: 3em;
+    padding-bottom: 1em;
+  }
 }
 
 #restaurants h2 {
@@ -443,9 +629,10 @@ section img {
   margin-bottom: 3em;
 }
 
-@media (min-width: 64em) {
-  #restaurants {
-    margin-top: 4em;
+@media (min-width: 1024px) {
+  #restaurants h2 {
+    padding-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
@@ -460,7 +647,7 @@ section img {
           box-shadow: 0 0 20px #0000002e;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .vignette-restaurant {
     display: inline-block;
     width: 20%;
@@ -476,7 +663,7 @@ section img {
   border-radius: 30px 30px 0 0;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .vignette-restaurant img {
     height: 10em;
   }
@@ -488,12 +675,25 @@ section img {
   color: black;
 }
 
+@media (min-width: 1024px) {
+  .vignette-restaurant h3 {
+    margin-left: 1em;
+  }
+}
+
 .vignette-restaurant h4 {
   margin-left: 1.5em;
   margin-top: -1em;
   padding-bottom: 2em;
   color: black;
   font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .vignette-restaurant h4 {
+    margin-left: 1em;
+    font-size: 1em;
+  }
 }
 
 .nouveaute p {
@@ -505,7 +705,7 @@ section img {
   margin-left: 65%;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .nouveaute p {
     font-size: 1em;
   }
@@ -519,7 +719,7 @@ section img {
   color: black;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .icone-vide {
     font-size: 2em;
   }
@@ -537,9 +737,11 @@ section img {
   bottom: 10%;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1024px) {
   .icone-plein {
-    font-size: 2em;
+    font-size: 2.2em;
+    left: 84.5%;
+    bottom: 9.5%;
   }
 }
 

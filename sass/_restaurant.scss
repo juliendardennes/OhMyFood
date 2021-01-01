@@ -1,15 +1,19 @@
-
 #restaurants {
   background-color: #eaeaea;
   margin-top: 8em;
-  padding-bottom: 7em;
+  padding-bottom: 6em;
+  @media (min-width: 1024px) {
+    margin-top: 3em;
+    padding-bottom: 1em;
+  }
   h2 {
     padding-top: 3em;
     margin-left: 2em;
     margin-bottom: 3em;
-  }
-  @media (min-width: 64em) {
-    margin-top: 4em;
+    @media (min-width: 1024px) {
+      padding-top: 1em;
+      margin-bottom: 1em;
+    }
   }
 }
 
@@ -21,7 +25,7 @@
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 0 20px #0000002e;
-  @media (min-width: 64em) {
+  @media (min-width: 1024px) {
     display: inline-block;
     width: 20%;
     height: 15em;
@@ -31,7 +35,7 @@
     height: 22em;
     object-fit: cover;
     border-radius: 30px 30px 0 0;
-    @media (min-width: 64em) {
+    @media (min-width: 1024px) {
       height: 10em;
     }
   }
@@ -39,6 +43,9 @@
     margin-top: 0.5em;
     margin-left: 1.5em;
     color: black;
+    @media (min-width: 1024px) {
+      margin-left: 1em;
+    }
   }
   h4 {
     margin-left: 1.5em;
@@ -46,6 +53,10 @@
     padding-bottom: 2em;
     color: black;
     font-weight: normal;
+    @media (min-width: 1024px) {
+      margin-left: 1em;
+      font-size: 1em;
+    }
   }
 }
 
@@ -56,7 +67,7 @@
   position: absolute;
   font-size: 3em;
   margin-left: 65%;
-  @media (min-width: 64em) {
+  @media (min-width: 1024px) {
     font-size: 1em;
   }
 }
@@ -67,7 +78,7 @@
   left: 85%;
   bottom: 10%;
   color: black;
-  @media (min-width: 64em) {
+  @media (min-width: 1024px) {
     font-size: 2em;
   }
   &:hover {
@@ -81,8 +92,10 @@
   font-size: 4em;
   left: 85%;
   bottom: 10%;
-  @media (min-width: 64em) {
-    font-size: 2em;
+  @media (min-width: 1024px) {
+    font-size: 2.2em;
+    left: 84.5%;
+    bottom: 9.5%;
   }
   &:hover {
     transition: all 0.2s linear 0.2s;
@@ -90,5 +103,5 @@
     background: linear-gradient(to bottom, #FF79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+  }
 }

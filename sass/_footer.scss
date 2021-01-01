@@ -1,12 +1,19 @@
 .pied-de-page {
   background-color: #353535;
+  padding-top: 2em;
   padding-bottom: 7em;
+  @media (min-width: 1024px) {
+    padding-bottom: 1em;
+  }
   h3 {
     color: white;
     margin-left: 3em;
     padding-top: 2em;
     font-size: 2em;
     font-weight: normal;
+    @media (min-width: 1024px) {
+      padding-top: 0.1em;
+    }
   }
   a {
     color: white;

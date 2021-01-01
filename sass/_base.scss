@@ -1,4 +1,4 @@
-body {
+body h1 {
   font-family: 'roboto' , sans-serif;
 }
 
@@ -10,7 +10,7 @@ body li {
   list-style: none;
 }
 
-h1, .pied-de-page h3 {
+.pied-de-page h3 {
   font-family: 'shrikhand' , cursive;
 }
 
@@ -18,21 +18,29 @@ h1, .pied-de-page h3 {
   position: absolute;
   width: 99%;
   height: 100%;
-  background-color: #000;
-  color: lighten( #000, 0%);
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 4s accueil forwards;
+  pointer-events: none;
+  -webkit-animation: 4s accueil forwards;
+}
+@keyframes accueil {
+  100% {
+    opacity: 0;
+  }
 }
 
 .lettre {
   color: #9356dc;
   font-size: 90px;
   letter-spacing: 25px;
-  font-family: 'shrikhand';
-  animation: flash 3s linear infinite;
-  -webkit-animation: flash 1.2s linear infinite;
+  font-family: 'shrikhand' , cursive;
+  animation: 1s flash linear infinite;
+  -webkit-animation: 1s flash linear infinite;
 }
+
 @keyframes flash {
   0% {
     color: #ff79da;
@@ -47,12 +55,14 @@ h1, .pied-de-page h3 {
     text-shadow: 0 0 7px #ff79da;
   }
 }
+
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
 }
 .lettre:nth-child(2) {
   animation-delay: 0.2s;
-}.lettre:nth-child(3) {
+}
+.lettre:nth-child(3) {
   animation-delay: 0.3s;
 }
 .lettre:nth-child(4) {

@@ -2,6 +2,9 @@ section img {
   width: 99%;
   position: absolute;
   z-index: 0;
+  @media (min-width: 1024px) {
+    height: 40em;
+  }
 }
 
 .carte-restaurant {
@@ -13,35 +16,49 @@ section img {
   background-color: #f6f6f6;
   border-radius: 10em 10em 0 0;
   padding: 1em 0 4em 0.7em;
+  @media (min-width: 1024px) {
+    border-radius: 5em 5em 0 0;
+}
   h1 {
+    font-family: 'shrikhand' , cursive;
     font-size: 4em;
     margin-left: 0.5em;
+    @media (min-width: 1024px) {
+      font-size: 2.5em;
+    }
   }
   h2 {
     font-size: 3em;
     border-bottom: 3px solid #99e2d0;
     width: 10%;
     margin-top: 2em;
+    @media (min-width: 1024px) {
+      font-size: 1.7em;
+    }
   }
 }
 
-.icone-menu-vide {
+.icone-vide-menu {
   position: absolute;
-  margin-left: 15%;
-  @media (min-width: 64em) {
-    margin-left: 25%;
+  margin-left: 14%;
+  bottom: 95%;
+  @media (min-width: 1024px) {
+    left: 70%;
+    bottom: 95%;
   }
   &:hover {
     opacity: 0;
   }
 }
-
-.icone-menu-plein {
+.icone-plein-menu {
   position:absolute;
-  margin-left: 15%;
+  margin-left: 14%;
+  bottom: 95%;
   opacity: 0;
-  @media (min-width: 64em) {
-    margin-left: 25%;
+  font-size: 1.1em;
+  @media (min-width: 1024px) {
+    left: 69.8%;
+    bottom: 94.9%;
   }
   &:hover {
     transition: all 0.2s linear 0.2s;
@@ -53,30 +70,76 @@ section img {
 }
 
 .plat {
+  position: relative;
   width: 95%;
   background-color: white;
   border-radius: 35px;
   box-shadow: 0 0 20px #0000002e;
   padding-left: 2em;
-  padding-bottom: 1em;
-  h3 {
-    font-size: 2em;
-    padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  animation: 1.2s menu-delay ease-in-out ;
+  -webkit-animation: 1.2s menu-delay ease-in-out ;
+  @media (min-width: 1024px) {
+    width: 50%;
   }
-  h4 {
-    margin-top: -1em;
-    font-size: 0.9em;
-    @media (min-width: 64em) {
-      font-size: 1.5em;
-    }
   }
+
+@keyframes menu-delay { /*animation apparation des plats*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.plat:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.plat:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.plat:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.plat:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.plat:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.plat:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.plat:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.plat:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.plat:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.plat:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.plat h3 {
+  font-size: 2em;
+  padding-top: 0.5em;
+  @media (min-width: 1024px) {
+    font-size: 1.3em;
+  }
+}
+h4 {
+  margin-top: -1em;
+  font-size: 0.8em;
 }
 
 .tarif {
   font-size: 3em;
   position: absolute;
   right: 1em;
-  @media (min-width: 64em) {
+  @media (min-width: 1024px) {
     font-size: 1.5em;
   }
 }
