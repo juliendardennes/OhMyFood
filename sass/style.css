@@ -205,6 +205,7 @@ section {
   /*partie descriptif*/
   background-color: #f6f6f6;
   padding-bottom: 4em;
+  padding-top: 2em;
 }
 
 .formulaire {
@@ -381,8 +382,8 @@ article h2 {
   display: inline;
   margin-left: -20px;
   margin-right: 5em;
-  padding: 1em;
-  font-size: 13px;
+  padding: 1.2em;
+  font-size: 15px;
   border-radius: 50%;
   background-color: #9356dc;
 }
@@ -510,6 +511,37 @@ section img {
   }
 }
 
+.plat h3 {
+  font-size: 2em;
+  padding-top: 0.5em;
+  font-weight: bolder;
+}
+
+@media (min-width: 1024px) {
+  .plat h3 {
+    font-size: 1.3em;
+  }
+}
+
+.plat h4 {
+  margin-top: -1em;
+  margin-right: 20%;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.plat .tarif {
+  font-size: 3.5em;
+  position: absolute;
+  right: 1em;
+}
+
+@media (min-width: 1024px) {
+  .plat .tarif {
+    font-size: 1.5em;
+  }
+}
+
 @-webkit-keyframes menu-delay {
   /*animation apparation des plats*/
   0% {
@@ -580,37 +612,6 @@ section img {
 .plat:nth-child(10) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-}
-
-.plat h3 {
-  font-size: 2em;
-  padding-top: 0.5em;
-  font-weight: bolder;
-}
-
-@media (min-width: 1024px) {
-  .plat h3 {
-    font-size: 1.3em;
-  }
-}
-
-h4 {
-  margin-top: -1em;
-  margin-right: 20%;
-  font-size: 0.9em;
-  font-weight: 100;
-}
-
-.tarif {
-  font-size: 3.5em;
-  position: absolute;
-  right: 1em;
-}
-
-@media (min-width: 1024px) {
-  .tarif {
-    font-size: 1.5em;
-  }
 }
 
 #restaurants {

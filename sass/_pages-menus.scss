@@ -83,6 +83,28 @@ section img {
   @media (min-width: 1024px) {
     width: 50%;
     }
+    h3 {
+      font-size: 2em;
+      padding-top: 0.5em;
+      font-weight: bolder;
+      @media (min-width: 1024px) {
+        font-size: 1.3em;
+      }
+    }
+    h4 {
+      margin-top: -1em;
+      margin-right: 20%;
+      font-size: 0.9em;
+      font-weight: 100;
+    }
+    .tarif {
+      font-size: 3.5em;
+      position: absolute;
+      right: 1em;
+      @media (min-width: 1024px) {
+        font-size: 1.5em;
+      }
+    }
   }
 
 @keyframes menu-delay { /*animation apparation des plats*/
@@ -123,28 +145,4 @@ section img {
 }
 .plat:nth-child(10) {
   animation-delay: 1s;
-}
-
-.plat h3 {
-  font-size: 2em;
-  padding-top: 0.5em;
-  font-weight: bolder;
-  @media (min-width: 1024px) {
-    font-size: 1.3em;
-  }
-}
-h4 {
-  margin-top: -1em;
-  margin-right: 20%;
-  font-size: 0.9em;
-  font-weight: 100;
-}
-
-.tarif {
-  font-size: 3.5em;
-  position: absolute;
-  right: 1em;
-  @media (min-width: 1024px) {
-    font-size: 1.5em;
-  }
 }

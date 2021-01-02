@@ -30,6 +30,7 @@ header .logo {
 section {     /*partie descriptif*/
   background-color: #f6f6f6;
   padding-bottom: 4em;
+  padding-top: 2em;
 }
 
 .formulaire {/*recherche en fonction de la ville*/
@@ -63,17 +64,18 @@ section {     /*partie descriptif*/
   font-weight: bold;
 }
 
-.explorer h1 {
-  margin: 2em;
-  text-align: center;
-  font-size: 2em;
-}
-
-.explorer p {
-  text-align: center;
-  margin: 2em;
-  @media (min-width: 1024px) {
-    font-size: 1.2em;
+.explorer {
+  h1 {
+    margin: 2em;
+    text-align: center;
+    font-size: 2em;
+  }
+  p {
+    text-align: center;
+    margin: 2em;
+    @media (min-width: 1024px) {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -97,6 +99,7 @@ section {     /*partie descriptif*/
     filter: brightness(120%);
   }
 }
+
 article h2 {
   margin-left: 2em;
   margin-top: 4em;
@@ -109,51 +112,49 @@ article h2 {
   @media (min-width: 1024px){
     display: flex;
   }
-}
-.fonctionnement li {
-  background-color: #eaeaea;
-  box-shadow: 0 0 20px #0c0c0c2e;
-  margin: 1em 3em 0em 3em;
-  border-radius: 30px;
-  padding: 3.5em 0;
-  font-weight: bold;
-  font-size: 0.9em;
-  @media (min-width: 1024px) {
-    width: 80%;
-    padding: 1em ;
-    margin-left: 0.5em;
+  li {
+    background-color: #eaeaea;
+    box-shadow: 0 0 20px #0c0c0c2e;
+    margin: 1em 3em 0em 3em;
+    border-radius: 30px;
+    padding: 3.5em 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    @media (min-width: 1024px) {
+      width: 80%;
+      padding: 1em ;
+      margin-left: 0.5em;
+    }
+    &:hover {
+      box-shadow: 0 0 20px #e4c7dc;
+      background-color: #e4c7dc;
+    }
   }
-  &:hover {
-    box-shadow: 0 0 20px #e4c7dc;
-    background-color: #e4c7dc;
+  i/*icone*/ {
+    color: grey;
+    margin-right: 4em;
+    @media (min-width: 1024px) {
+      margin: 0.5em;
+      font-size: 2em;
+    }
+  }
+  a {
+    color: black;
+    margin-left: 5em;
+    @media (min-width: 1024px) {
+      margin-left: 0.1em;
+      width: 40%;
+    }
   }
 }
 
-.fonctionnement i/*icone*/ {
-  color: grey;
-  margin-right: 4em;
-  @media (min-width: 1024px) {
-    margin: 0.5em;
-    font-size: 2em;
-  }
-}
-
-.fonctionnement a {
-  color: black;
-  margin-left: 5em;
-  @media (min-width: 1024px) {
-    margin-left: 0.1em;
-    width: 40%;
-  }
-}
-  
 .numero {
   color: white;
   display: inline;
   margin-left: -20px;
   margin-right: 5em;
-  padding: 1em;
-  font-size: 13px;
+  padding: 1.2em;
+  font-size: 15px;
   border-radius: 50%;
   background-color: #9356dc;
   @media (min-width: 1024px) {
