@@ -16,7 +16,7 @@ header .logo {
   color: black;
 }
 
-.contenaire-en-tete .logo {/*menu des restaurants */
+header .logo {/*menu des restaurants */
   margin-left: 20%;
   margin-top: 2em;
   width: 50%;
@@ -52,7 +52,7 @@ section {     /*partie descriptif*/
   top: 1em;
   font-size: 3.5em;
   @media (min-width: 1024px) {
-    top: 0.5em;
+    top: 0.7em;
     font-size: 2.5em;
     margin-left: 35%;
   }

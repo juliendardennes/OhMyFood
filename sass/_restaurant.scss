@@ -98,10 +98,15 @@
     bottom: 9.5%;
   }
   &:hover {
+    transform: scale(1.1);
     transition: all 0.2s linear 0.2s;
     opacity: 1;
     background: linear-gradient(to bottom, #FF79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 }
