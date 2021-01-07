@@ -494,7 +494,20 @@ section img {
   }
 }
 
-.plat {
+.descript-menu:hover .fa-check-circle {
+  opacity: 1;
+}
+
+.descript-menu:hover .anim-container {
+  opacity: 1;
+}
+
+.descript-menu:hover .tarif {
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+}
+
+.descript-menu {
   position: relative;
   width: 95%;
   background-color: white;
@@ -506,32 +519,31 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .plat {
-    position: relative;
-    width: 28%;
-    display: inline-block;
+  .descript-menu {
+    width: 25%;
+    border-radius: 20px;
   }
 }
 
-.plat h3 {
+.descript-menu h3 {
   font-size: 1.6em;
   padding-top: 0.5em;
   font-weight: bolder;
 }
 
 @media (min-width: 1024px) {
-  .plat h3 {
+  .descript-menu h3 {
     font-size: 1.3em;
   }
 }
 
-.plat p {
+.descript-menu p {
   margin-top: -1em;
   font-size: 0.9em;
   font-weight: 100;
 }
 
-.plat .tarif p {
+.descript-menu .tarif p {
   position: absolute;
   left: 85%;
   top: 80%;
@@ -540,45 +552,64 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .plat .tarif p {
+  .descript-menu .tarif p {
     font-size: 1.5em;
     top: 65%;
     left: 80%;
   }
 }
 
-.plat .anim-container {
+.descript-menu .anim-container {
   opacity: 0;
+  background-color: #99e2d0;
+  border-radius: 0 35px 35px 0;
   position: absolute;
-  left: 90%;
-  top: 50%;
+  left: 85%;
+  top: 2%;
 }
 
-.descript-menu:hover .tarif {
-  -webkit-transform: translateX(-3rem);
-          transform: translateX(-3rem);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+@media (min-width: 1024px) {
+  .descript-menu .anim-container {
+    left: 80%;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
-.descript-menu:hover .anim-container {
-  position: absolute;
-  left: 90%;
-  top: 50%;
-  opacity: 1;
-  width: 5em;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: blue;
+.descript-menu .fa-check-circle {
+  opacity: 0;
+  color: white;
+  font-size: 3em;
+  margin: 1em;
 }
 
-.descript-menu:hover .fa-check-circle {
-  color: red;
-  font-size: 1em;
+@media (min-width: 1024px) {
+  .descript-menu .fa-check-circle {
+    font-size: 2em;
+    margin: 0.6em;
+  }
 }
 
+/*
+.descript-menu:hover {
+  .tarif {
+    transform: translateX(-3rem);
+    transform-origin: right;
+}
+  .anim-container {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    opacity: 1;
+    width: 5em;
+    height: 100%;
+    align-items: center;
+    background-color:  blue;
+  }
+  .fa-check-circle {
+    color: red;
+    font-size: 1em;
+  }
+}*/
 #restaurants {
   background-color: #eaeaea;
   margin-top: 8em;

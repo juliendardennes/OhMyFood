@@ -71,9 +71,19 @@ section img {
     font-size: 1.7em;
   }
 }
+.descript-menu:hover {
+  .fa-check-circle {
+    opacity: 1;
+  }
+  .anim-container {
+    opacity: 1;
+  }
+  .tarif {
+    transform: translateX(-5rem);
+}
+}
 
-
-.plat {
+.descript-menu {
   position: relative;
   width: 95%;
   background-color: white;
@@ -82,10 +92,9 @@ section img {
   padding-left: 2em;
   padding-bottom: 0.1em;
  @media(min-width: 1024px){
-   position: relative;
-    width: 28%;
-    display: inline-block;
-    }
+    width: 25%;
+    border-radius: 20px;
+}
     h3 {
       font-size: 1.6em;
       padding-top: 0.5em;
@@ -113,12 +122,28 @@ section img {
     }
     .anim-container {
       opacity: 0;
+      background-color:  #99e2d0;
+      border-radius: 0 35px 35px 0;
       position: absolute;
-      left: 90%;
-      top: 50%;
+      left: 85%;
+      top: 2%;
+      @media (min-width: 1024px) {
+        left: 80%;
+        border-radius: 0 20px 20px 0;
   }
 }
-
+  .fa-check-circle {
+    opacity: 0;
+    color: white;
+    font-size: 3em;
+    margin: 1em;
+    @media (min-width: 1024px) {
+      font-size: 2em;
+      margin: 0.6em;
+    }
+  }
+}
+/*
 .descript-menu:hover {
   .tarif {
     transform: translateX(-3rem);
@@ -138,4 +163,4 @@ section img {
     color: red;
     font-size: 1em;
   }
-}
+}*/
