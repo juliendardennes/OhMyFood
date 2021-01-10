@@ -1,9 +1,11 @@
 header .logo {
   margin-left: 20%;
-  width: 40em;
+  margin-top: 2em;
+  width: 50%;
+  padding-bottom: 2em;
   @media (min-width: 1024px) {
-    width: 15em;
-    margin-left: 35%;
+    width: 20em;
+    margin-left: 40%;
   }
 }
 
@@ -14,17 +16,6 @@ header .logo {
   font-size: 3em;
   margin-left: 1em;
   color: black;
-}
-
-header .logo {/*menu des restaurants */
-  margin-left: 20%;
-  margin-top: 2em;
-  width: 50%;
-  padding-bottom: 2em;
-  @media (min-width: 1024px) {
-    width: 20em;
-    margin-left: 40%;
-  }
 }
 
 section {     /*partie descriptif*/
