@@ -1,5 +1,7 @@
+$tertiaire: #99e2d0;
+
 #restaurants {
-  background-color: #eaeaea;
+  background-color: $background;
   margin-top: 8em;
   padding-bottom: 6em;
   @media (min-width: 1024px) {
@@ -61,7 +63,7 @@
 }
 
 .nouveaute p {
-  background-color: #99e2d0;
+  background-color: $tertiaire;
   color: #008766;
   padding: 0.5em;
   position: absolute;
@@ -100,7 +102,7 @@
   &:hover {
     transition: all 0.2s linear 0.2s;
     opacity: 1;
-    background: linear-gradient(to bottom, #FF79da, #9356dc);
+    background: linear-gradient(to bottom, $secondaire, $primaire);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-transform: scale(1.1);

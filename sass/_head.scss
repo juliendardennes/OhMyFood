@@ -1,3 +1,7 @@
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$background: #eaeaea;
+
 header .logo {
   margin-left: 20%;
   margin-top: 2em;
@@ -18,23 +22,23 @@ header .logo {
   color: black;
 }
 
-section {     /*partie descriptif*/
-  background-color: #f6f6f6;
-  padding-bottom: 4em;
-  padding-top: 2em;
-}
-
 .formulaire {/*recherche en fonction de la ville*/
   width: 100%;
   height: 8em;
   margin-top: -2em;
   text-align: center;
-  background-color: #eaeaea;
-  border: 1px solid #eaeaea;
+  background-color: $background;
+  border: 1px solid $background;
   border-top: 1px solid grey;
   @media (min-width: 1024px) {
     height: 4em;
   }
+}
+
+section {     /*partie descriptif*/
+  background-color: #f6f6f6;
+  padding-bottom: 4em;
+  padding-top: 2em;
 }
 
 .fa-map-marker-alt {
@@ -74,7 +78,7 @@ section {     /*partie descriptif*/
   border-radius: 85px;
   margin: 5em 10em ;
   padding: 2em;
-  background: linear-gradient(#FF79da, #9356dc);
+  background: linear-gradient($secondaire, $primaire);
   text-align: center;
   a {
     color: white;
@@ -104,7 +108,7 @@ article h2 {
     display: flex;
   }
   li {
-    background-color: #eaeaea;
+    background-color: $background;
     box-shadow: 0 0 20px #0c0c0c2e;
     margin: 1em 3em 0em 3em;
     border-radius: 30px;
@@ -117,9 +121,11 @@ article h2 {
       margin-left: 0.5em;
     }
     &:hover {
-      box-shadow: 0 0 20px #e4c7dc;
-      background-color: #e4c7dc;
-    }
+      box-shadow: 0 0 20px $secondaire;
+      background-color: $secondaire;
+      filter: brightness(140%);
+      -webkit-filter: brightness(140%);
+}
   }
   i/*icone*/ {
     color: grey;
@@ -147,7 +153,7 @@ article h2 {
   padding: 1.2em;
   font-size: 15px;
   border-radius: 50%;
-  background-color: #9356dc;
+  background-color: $primaire;
   @media (min-width: 1024px) {
     margin-right: 1em;
   }

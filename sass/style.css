@@ -148,13 +148,6 @@ header .logo {
   color: black;
 }
 
-section {
-  /*partie descriptif*/
-  background-color: #f6f6f6;
-  padding-bottom: 4em;
-  padding-top: 2em;
-}
-
 .formulaire {
   /*recherche en fonction de la ville*/
   width: 100%;
@@ -170,6 +163,13 @@ section {
   .formulaire {
     height: 4em;
   }
+}
+
+section {
+  /*partie descriptif*/
+  background-color: #f6f6f6;
+  padding-bottom: 4em;
+  padding-top: 2em;
 }
 
 .fa-map-marker-alt {
@@ -232,8 +232,8 @@ section {
   border-radius: 85px;
   margin: 5em 10em;
   padding: 2em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79da), to(#9356dc));
-  background: linear-gradient(#FF79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   text-align: center;
 }
 
@@ -295,9 +295,11 @@ article h2 {
 }
 
 .fonctionnement li:hover {
-  -webkit-box-shadow: 0 0 20px #e4c7dc;
-          box-shadow: 0 0 20px #e4c7dc;
-  background-color: #e4c7dc;
+  -webkit-box-shadow: 0 0 20px #ff79da;
+          box-shadow: 0 0 20px #ff79da;
+  background-color: #ff79da;
+  filter: brightness(140%);
+  -webkit-filter: brightness(140%);
 }
 
 .fonctionnement i {
@@ -343,6 +345,7 @@ article h2 {
 
 section img {
   width: 99%;
+  padding-top: -4em;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -361,7 +364,7 @@ section img {
   top: 30em;
   margin-bottom: 30em;
   width: 99%;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   border-radius: 10em 10em 0 0;
   padding: 1em 0 4em 0.7em;
 }
@@ -420,8 +423,8 @@ section img {
           transform: scale(1.1);
   transition: all 0.3s linear 0.2s;
   opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79da), to(#9356dc));
-  background: linear-gradient(to bottom, #FF79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 0.3s linear 0.2s;
@@ -444,6 +447,8 @@ section img {
 }
 
 .descript-menu {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
   cursor: pointer;
   position: relative;
   width: 95%;
@@ -524,6 +529,7 @@ section img {
 }
 
 .descript-menu .fa-check-circle {
+  display: none;
   color: white;
   font-size: 3em;
   margin: 1.2em;
@@ -538,6 +544,7 @@ section img {
 }
 
 .descript-menu:hover .fa-check-circle {
+  display: inline-block;
   animation: rotation .5s linear;
   -webkit-animation: rotation .5s linear;
 }
@@ -725,8 +732,8 @@ section img {
   -webkit-transition: all 0.2s linear 0.2s;
   transition: all 0.2s linear 0.2s;
   opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79da), to(#9356dc));
-  background: linear-gradient(to bottom, #FF79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transform: scale(1.1);
