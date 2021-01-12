@@ -1,3 +1,9 @@
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+$background: #eaeaea;
+
+
 body {
   h1 {
     font-family: 'roboto', sans-serif;
@@ -33,7 +39,7 @@ body {
 }
 
 .lettre {
-  color: #9356dc;
+  color: $primaire;
   font-size: 90px;
   letter-spacing: 25px;
   font-family: 'shrikhand' , cursive;
@@ -43,16 +49,16 @@ body {
 
 @keyframes flash {
   0% {
-    color: #ff79da;
-    text-shadow: 0 0 7px #ff79da;
+    color: $secondaire;
+    text-shadow: 0 0 7px $secondaire;
   }
   90% {
-    color: #9356dc;
-    text-shadow: none;
+    color: $primaire;
+    text-shadow: 0 0 7px $secondaire;
   }
   100% {
-    color: #ff79da;
-    text-shadow: 0 0 7px #ff79da;
+    color: $secondaire;
+    text-shadow: 0 0 7px $secondaire;
   }
 }
 

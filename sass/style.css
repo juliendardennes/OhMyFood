@@ -61,7 +61,7 @@ body li {
   }
   90% {
     color: #9356dc;
-    text-shadow: none;
+    text-shadow: 0 0 7px #ff79da;
   }
   100% {
     color: #ff79da;
@@ -76,7 +76,7 @@ body li {
   }
   90% {
     color: #9356dc;
-    text-shadow: none;
+    text-shadow: 0 0 7px #ff79da;
   }
   100% {
     color: #ff79da;
@@ -279,11 +279,10 @@ article h2 {
   background-color: #eaeaea;
   -webkit-box-shadow: 0 0 20px #0c0c0c2e;
           box-shadow: 0 0 20px #0c0c0c2e;
-  margin: 1em 3em 0em 3em;
+  margin: 1em 3em 4em 3em;
   border-radius: 30px;
   padding: 3.5em 0;
   font-weight: bold;
-  font-size: 0.9em;
 }
 
 @media (min-width: 1024px) {
@@ -329,10 +328,10 @@ article h2 {
 .numero {
   color: white;
   display: inline;
-  margin-left: -20px;
-  margin-right: 5em;
+  margin-left: -1.5em;
+  margin-right: 4em;
   padding: 1.2em;
-  font-size: 15px;
+  font-size: 1.5em;
   border-radius: 50%;
   background-color: #9356dc;
 }
@@ -340,6 +339,7 @@ article h2 {
 @media (min-width: 1024px) {
   .numero {
     margin-right: 1em;
+    font-size: 1em;
   }
 }
 
@@ -392,6 +392,7 @@ section img {
 .carte-restaurant .icone-vide-menu {
   position: absolute;
   margin-left: 6%;
+  padding-right: 2%;
 }
 
 @media (min-width: 1024px) {
@@ -407,7 +408,8 @@ section img {
 
 .carte-restaurant .icone-plein-menu {
   position: absolute;
-  margin-left: 6%;
+  margin-left: 10%;
+  padding-right: 2%;
   opacity: 0;
 }
 
@@ -419,8 +421,7 @@ section img {
 }
 
 .carte-restaurant .icone-plein-menu:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   transition: all 0.3s linear 0.2s;
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -431,6 +432,10 @@ section img {
   -moz-transition: all 0.3s linear 0.2s;
   -ms-transition: all 0.3s linear 0.2s;
   -o-transition: all 0.3s linear 0.2s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .carte-menu h2 {
@@ -446,9 +451,7 @@ section img {
   }
 }
 
-.descript-menu {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+.description-menu {
   cursor: pointer;
   position: relative;
   width: 95%;
@@ -460,7 +463,7 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .descript-menu {
+  .description-menu {
     width: 28%;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -469,20 +472,20 @@ section img {
   }
 }
 
-.descript-menu h3 {
+.description-menu h3 {
   font-size: 1.6em;
   padding-top: 0.5em;
   font-weight: bolder;
 }
 
 @media (min-width: 1024px) {
-  .descript-menu h3 {
+  .description-menu h3 {
     font-size: 1.3em;
     padding-top: 0;
   }
 }
 
-.descript-menu p {
+.description-menu p {
   text-overflow: ellipsis;
   overflow: hidden;
   padding-bottom: 1.7em;
@@ -490,12 +493,12 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .descript-menu p {
+  .description-menu p {
     padding-bottom: 0.5em;
   }
 }
 
-.descript-menu span {
+.description-menu span {
   float: right;
   margin-right: 8%;
   font-size: 3.5em;
@@ -503,16 +506,19 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .descript-menu span {
+  .description-menu span {
     font-size: 1.5em;
   }
 }
 
-.descript-menu .anim-container {
-  -webkit-transition: width 0.5s linear;
-  transition: width 0.5s linear;
-  width: 0;
+.description-menu .animation-container {
+  transition: width .5s linear;
+  -webkit-transition: width .5s linear;
+  -moz-transition: width .5s linear;
+  -ms-transition: width .5s linear;
+  -o-transition: width .5s linear;
   height: 100%;
+  width: 0;
   background-color: #99e2d0;
   border-radius: 0 35px 35px 0;
   position: absolute;
@@ -521,39 +527,42 @@ section img {
 }
 
 @media (min-width: 1024px) {
-  .descript-menu .anim-container {
+  .description-menu .animation-container {
     right: 0;
     top: 0;
     border-radius: 0 20px 20px 0;
   }
 }
 
-.descript-menu .fa-check-circle {
-  display: none;
+.description-menu .fa-check-circle {
+  position: absolute;
+  right: 1.2em;
+  top: 35%;
+  opacity: 0;
   color: white;
   font-size: 3em;
-  margin: 1.2em;
 }
 
 @media (min-width: 1024px) {
-  .descript-menu .fa-check-circle {
+  .description-menu .fa-check-circle {
     font-size: 2.4em;
-    margin-left: 0.4em;
-    margin-top: 1em;
+    right: 0.5em;
   }
 }
 
-.descript-menu:hover .fa-check-circle {
-  display: inline-block;
+.description-menu:hover .fa-check-circle {
+  opacity: 1;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   animation: rotation .5s linear;
   -webkit-animation: rotation .5s linear;
 }
 
-.descript-menu:hover .anim-container {
+.description-menu:hover .animation-container {
   width: 17%;
 }
 
-.descript-menu:hover span {
+.description-menu:hover span {
   /*tarif*/
   -webkit-transform: translateX(-2em);
           transform: translateX(-2em);

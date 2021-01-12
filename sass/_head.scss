@@ -1,7 +1,3 @@
-$primaire: #9356dc;
-$secondaire: #ff79da;
-$background: #eaeaea;
-
 header .logo {
   margin-left: 20%;
   margin-top: 2em;
@@ -110,11 +106,10 @@ article h2 {
   li {
     background-color: $background;
     box-shadow: 0 0 20px #0c0c0c2e;
-    margin: 1em 3em 0em 3em;
+    margin: 1em 3em 4em 3em;
     border-radius: 30px;
     padding: 3.5em 0;
     font-weight: bold;
-    font-size: 0.9em;
     @media (min-width: 1024px) {
       width: 80%;
       padding: 1em ;
@@ -148,13 +143,14 @@ article h2 {
 .numero {
   color: white;
   display: inline;
-  margin-left: -20px;
-  margin-right: 5em;
+  margin-left: -1.5em;
+  margin-right: 4em;
   padding: 1.2em;
-  font-size: 15px;
+  font-size: 1.5em;
   border-radius: 50%;
   background-color: $primaire;
   @media (min-width: 1024px) {
     margin-right: 1em;
+    font-size: 1em;
   }
 }
