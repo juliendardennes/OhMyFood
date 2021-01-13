@@ -46,7 +46,7 @@ section img {
   }
   .icone-plein-menu {
     position: absolute;
-    margin-left: 10%;
+    margin-left: 6%;
     padding-right: 2%;
     opacity: 0;
     @media (min-width: 1024px) {
@@ -81,8 +81,24 @@ section img {
     font-size: 1.7em;
   }
 }
-
+@for $i from 1 through 10{
+  .delay-#{$i} {
+    animation-delay: #{$i * 1}s;
+  }
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+}
+  100% {
+    transform: scale(1);
+  }
+}
 .description-menu {
+  animation: 1s itemAppear ;
+  -webkit-animation: 1s itemAppear ;
+  animation-fill-mode: both;
+  transform: scale(0);
   cursor: pointer;
   position: relative;
   width: 95%;
@@ -90,7 +106,7 @@ section img {
   border-radius: 35px;
   box-shadow: 0 0 20px #0000002e;
   padding-left: 2em;
-  @media (min-width: 1024px) {
+  @media(min-width: 1024px) {
     width: 28%;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -158,10 +174,9 @@ section img {
     &:hover {
       .fa-check-circle {
         opacity: 1;
-        animation-delay: 2s;
         animation: rotation .5s linear ;
         -webkit-animation: rotation .5s linear ;
-}
+      }
       .animation-container /*background icone check*/ {
         width: 17%;
       }

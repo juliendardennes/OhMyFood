@@ -24,15 +24,21 @@ body {
   position: absolute;
   width: 99%;
   height: 100%;
-  background: #000;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 6s accueil forwards;
+  animation: 3s accueil forwards;
   pointer-events: none;
-  -webkit-animation: 6s accueil forwards;
+  -webkit-animation: 3s accueil forwards;
 }
 @keyframes accueil {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
   }
@@ -43,8 +49,8 @@ body {
   font-size: 90px;
   letter-spacing: 25px;
   font-family: 'shrikhand' , cursive;
-  animation: 2s flash linear infinite;
-  -webkit-animation: 2s flash linear infinite;
+  animation: .5s flash linear infinite;
+  -webkit-animation: .5s flash linear infinite;
 }
 
 @keyframes flash {
@@ -52,7 +58,7 @@ body {
     color: $secondaire;
     text-shadow: 0 0 7px $secondaire;
   }
-  90% {
+  50% {
     color: $primaire;
     text-shadow: 0 0 7px $secondaire;
   }
@@ -61,4 +67,8 @@ body {
     text-shadow: 0 0 7px $secondaire;
   }
 }
-
+@for $i from 1 through 8 {
+  .lettre:nth-child(#{$i}) {
+    animation-delay: ($i * 0.1s);
+  }
+}
