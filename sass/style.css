@@ -397,16 +397,17 @@ article h2 {
 
 section img {
   width: 99%;
-  padding-top: -4em;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  top: 10em;
   z-index: 0;
 }
 
 @media (min-width: 1024px) {
   section img {
     height: 40em;
+    top: 8em;
   }
 }
 
@@ -503,57 +504,73 @@ section img {
   }
 }
 
-.delay-1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+/*apparition des plats porgressive*/
+.delai-1 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
-.delay-2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+/*apparition des plats porgressive*/
+.delai-2 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
-.delay-3 {
+/*apparition des plats porgressive*/
+.delai-3 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+/*apparition des plats porgressive*/
+.delai-4 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+/*apparition des plats porgressive*/
+.delai-5 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/*apparition des plats porgressive*/
+.delai-6 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+/*apparition des plats porgressive*/
+.delai-7 {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+/*apparition des plats porgressive*/
+.delai-8 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+/*apparition des plats porgressive*/
+.delai-9 {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+/*apparition des plats porgressive*/
+.delai-10 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.delay-4 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+/*apparition des plats porgressive*/
+.delai-11 {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
 }
 
-.delay-5 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-
-.delay-6 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.delay-7 {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-.delay-8 {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.delay-9 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
-.delay-10 {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-
-@-webkit-keyframes itemAppear {
+@-webkit-keyframes apparition-progressive {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -564,7 +581,7 @@ section img {
   }
 }
 
-@keyframes itemAppear {
+@keyframes apparition-progressive {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -576,12 +593,12 @@ section img {
 }
 
 .description-menu {
-  animation: 1s itemAppear;
-  -webkit-animation: 1s itemAppear;
+  -webkit-animation-name: apparition-progressive;
+          animation-name: apparition-progressive;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   cursor: pointer;
   position: relative;
   width: 95%;

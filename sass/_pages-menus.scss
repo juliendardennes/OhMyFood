@@ -1,12 +1,12 @@
-
 section img {
   width: 99%;
-  padding-top: -4em;
   object-fit: cover;
   position: absolute;
+  top: 10em;
   z-index: 0;
   @media (min-width: 1024px) {
     height: 40em;
+    top: 8em;
   }
 }
 
@@ -81,12 +81,13 @@ section img {
     font-size: 1.7em;
   }
 }
-@for $i from 1 through 10{
-  .delay-#{$i} {
-    animation-delay: #{$i * 1}s;
+
+@for $i from 1 through 11{  /*apparition des plats porgressive*/
+  .delai-#{$i} {
+    animation-delay: #{$i * .3}s;
   }
 }
-@keyframes itemAppear {
+@keyframes apparition-progressive {
   0% {
     transform: scale(0);
 }
@@ -95,10 +96,9 @@ section img {
   }
 }
 .description-menu {
-  animation: 1s itemAppear ;
-  -webkit-animation: 1s itemAppear ;
+  animation-name: apparition-progressive;
+  animation-duration: .5s;
   animation-fill-mode: both;
-  transform: scale(0);
   cursor: pointer;
   position: relative;
   width: 95%;
