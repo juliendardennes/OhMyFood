@@ -339,9 +339,9 @@ article h2 {
 
 @media (min-width: 1024px) {
   .fonctionnement li {
-    width: 80%;
-    padding: 1em;
-    margin-left: 0.5em;
+    padding: 1.5em;
+    margin-left: 1em;
+    display: inline;
   }
 }
 
@@ -380,8 +380,7 @@ article h2 {
 .numero {
   color: white;
   display: inline;
-  margin-left: -1.5em;
-  margin-right: 4em;
+  margin-right: 1.5em;
   padding: 1.2em;
   font-size: 1.5em;
   border-radius: 50%;
@@ -619,9 +618,13 @@ section img {
   }
 }
 
+.description-menu .detail-menu {
+  position: relative;
+}
+
 .description-menu h3 {
-  font-size: 1.6em;
-  padding-top: 0.5em;
+  font-size: 2.4em;
+  padding-top: 1em;
   font-weight: bolder;
 }
 
@@ -635,25 +638,27 @@ section img {
 .description-menu p {
   text-overflow: ellipsis;
   overflow: hidden;
-  padding-bottom: 1.7em;
-  font-weight: 50;
+  white-space: nowrap;
+  padding-bottom: .7em;
+  width: 90%;
+  font-size: 3em;
 }
 
 @media (min-width: 1024px) {
   .description-menu p {
-    padding-bottom: 0.5em;
+    font-size: 1em;
   }
 }
 
-.description-menu span {
-  float: right;
-  margin-right: 8%;
+.description-menu h4 {
+  position: absolute;
+  top: 20%;
+  left: 90%;
   font-size: 3.5em;
-  font-weight: 600;
 }
 
 @media (min-width: 1024px) {
-  .description-menu span {
+  .description-menu h4 {
     font-size: 1.5em;
   }
 }
@@ -683,11 +688,11 @@ section img {
 
 .description-menu .fa-check-circle {
   position: absolute;
-  right: 1.2em;
+  right: 1em;
   top: 35%;
   opacity: 0;
   color: white;
-  font-size: 3em;
+  font-size: 4.2em;
 }
 
 @media (min-width: 1024px) {
@@ -707,10 +712,15 @@ section img {
   width: 17%;
 }
 
-.description-menu:hover span {
-  /*tarif*/
-  -webkit-transform: translateX(-2em);
-          transform: translateX(-2em);
+.description-menu:hover p {
+  width: 70%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.description-menu:hover h4 {
+  -webkit-transform: translateX(-3em);
+          transform: translateX(-3em);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -718,12 +728,11 @@ section img {
 @-webkit-keyframes rotation {
   /*rotation icone check*/
   from {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    opacity: 0;
   }
   50% {
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -734,12 +743,11 @@ section img {
 @keyframes rotation {
   /*rotation icone check*/
   from {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    opacity: 0;
   }
   50% {
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   to {
     -webkit-transform: rotate(360deg);

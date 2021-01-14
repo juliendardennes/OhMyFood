@@ -111,9 +111,9 @@ article h2 {
     padding: 3.5em 0;
     font-weight: bold;
     @media (min-width: 1024px) {
-      width: 80%;
-      padding: 1em ;
-      margin-left: 0.5em;
+      padding: 1.5em ;
+      margin-left: 1em;
+      display: inline;
     }
     &:hover {
       box-shadow: 0 0 20px $secondaire;
@@ -143,8 +143,7 @@ article h2 {
 .numero {
   color: white;
   display: inline;
-  margin-left: -1.5em;
-  margin-right: 4em;
+  margin-right: 1.5em;
   padding: 1.2em;
   font-size: 1.5em;
   border-radius: 50%;
