@@ -339,8 +339,9 @@ article h2 {
 
 @media (min-width: 1024px) {
   .fonctionnement li {
-    padding: 1.5em;
-    display: inline;
+    padding: 1.2em;
+    margin-right: .5em;
+    display: inline-block;
   }
 }
 
@@ -785,7 +786,7 @@ section img {
 @media (min-width: 1024px) {
   .vignette-restaurant {
     display: inline-block;
-    width: 22%;
+    width: 20%;
     height: 15em;
   }
 }
