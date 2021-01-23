@@ -308,8 +308,9 @@ article h2 {
 }
 
 .fonctionnement li {
+  position: relative;
   width: 90%;
-  padding: 1.5em 1em;
+  padding: 1.5em 0em;
   margin-top: 2em;
   background-color: #f6f6f6;
   -webkit-box-shadow: -5px 5px 5px grey;
@@ -338,7 +339,8 @@ article h2 {
 
 .fonctionnement i {
   font-size: 1.3em;
-  margin-right: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
   color: grey;
 }
 
@@ -355,18 +357,19 @@ article h2 {
 }
 
 .numero {
-  display: inline;
-  position: relative;
-  right: 15%;
+  position: absolute;
+  top: 30%;
+  right: 97%;
+  width: 15px;
   color: white;
   font-size: 0.8em;
-  padding: 0.8em 1em;
+  background-color: #9356dc;
+  padding: 0.5em 0.2em 0.5em 0.7em;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #9356dc;
 }
 
 .fa-arrow-left {
@@ -679,7 +682,7 @@ section img {
 
 .description-menu .fa-check-circle {
   position: absolute;
-  right: 0.7em;
+  right: 20%;
   top: 30%;
   opacity: 0;
   color: white;
@@ -689,7 +692,6 @@ section img {
 @media (min-width: 1024px) {
   .description-menu .fa-check-circle {
     font-size: 2em;
-    right: 12%;
   }
 }
 
@@ -766,8 +768,8 @@ section img {
   position: relative;
   background-color: white;
   border-radius: 30px;
-  -webkit-box-shadow: -5px 5px 5px grey;
-          box-shadow: -5px 5px 5px grey;
+  -webkit-box-shadow: -5px 5px 5px lightgrey;
+          box-shadow: -5px 5px 5px lightgrey;
 }
 
 @media (min-width: 1024px) {
@@ -780,8 +782,8 @@ section img {
 }
 
 .vignette-restaurant:hover {
-  -webkit-box-shadow: -5px 10px 10px black;
-          box-shadow: -5px 10px 10px black;
+  -webkit-box-shadow: -5px 10px 10px grey;
+          box-shadow: -5px 10px 10px grey;
 }
 
 .vignette-restaurant img {

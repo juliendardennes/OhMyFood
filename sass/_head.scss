@@ -89,8 +89,9 @@ article h2 {
 
 .fonctionnement {
   li {
+    position: relative;
     width: 90%;
-    padding: 1.5em 1em;
+    padding: 1.5em 0em;
     margin-top: 2em;
     background-color: $background;
     box-shadow: -5px 5px 5px grey;
@@ -112,7 +113,8 @@ article h2 {
   }
   i/*icone*/ {
     font-size: 1.3em;
-    margin-right: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
     color: grey;
     @media(min-width: 1024px) {
       margin-right: 0.5em;
@@ -126,16 +128,17 @@ article h2 {
 }
 
 .numero {
-  display: inline;
-  position: relative;
-  right: 15%;
+  position:absolute;
+  top: 30%;
+  right: 97%;
+  width: 15px;
   color: white;
   font-size: 0.8em;
-  padding: 0.8em 1em;
+  background-color: $primaire;
+  padding: 0.5em 0.2em 0.5em 0.7em;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: $primaire;
 }

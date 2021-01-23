@@ -17,7 +17,7 @@
   position: relative;
   background-color: white;
   border-radius: 30px;
-  box-shadow: -5px 5px 5px grey;
+  box-shadow: -5px 5px 5px lightgrey;
   @media (min-width: 1024px) {
     display: inline-block;
     margin-left: 5em;
@@ -25,7 +25,7 @@
     height: 15em;
   }
   &:hover {
-    box-shadow: -5px 10px 10px black ;
+    box-shadow: -5px 10px 10px grey ;
   }
   img {
     width: 100%;
