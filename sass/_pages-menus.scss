@@ -1,32 +1,58 @@
-section img {
-  width: 99%;
-  object-fit: cover;
-  position: absolute;
-  top: 10em;
-  z-index: 0;
+.fa-arrow-left { /*fleche de retour*/
+  font-size: 1.5em;
+  display: flex;
+  width: 10%;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  color: black;
   @media (min-width: 1024px) {
-    height: 40em;
-    top: 8em;
+    font-size: 3em;
+  }
+}
+.logo-carte {
+  width: 60%;
+  margin-top: 1em;
+  margin-left: 20%;
+  position: absolute;
+  top: 1%;
+  @media (min-width: 1024px) {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3em;
+  }
+}
+
+section img {
+  width: 100%;
+  object-fit: cover;
+  @media (min-width: 1024px) {
+    height: 25em;
+  }
+}
+
+.page-menu {
+  height: 95em;
+  background-color: $background;
+  @media (min-width: 1024px) {
+    height: auto;
   }
 }
 
 .carte-restaurant {
   position: relative;
   z-index: 1;
-  top: 30em;
-  margin-bottom: 30em;
-  width: 99%;
+  bottom: 4em;
+  padding: 1em 0 0 0.7em;
   background-color: $background;
-  border-radius: 10em 10em 0 0;
-  padding: 1em 0 4em 0.7em;
-  @media (min-width: 1024px) {
-    border-radius: 5em 5em 0 0;
-  }
+  border-radius: 5em 5em 0 0;
+  -webkit-border-radius: 5em 5em 0 0;
+  -moz-border-radius: 5em 5em 0 0;
+  -ms-border-radius: 5em 5em 0 0;
+  -o-border-radius: 5em 5em 0 0;
   h1 {
     font-family: 'shrikhand';
     font-weight: lighter;
-    font-size: 4em;
-    margin-left: 0.5em;
+    font-size: 1.8em;
     @media (min-width: 1024px) {
       text-align: center;
       font-size: 2.5em;
@@ -34,11 +60,10 @@ section img {
   }
   .icone-vide-menu {
     position: absolute;
-    margin-left: 6%;
-    padding-right: 2%;
+    margin-left: 8%;
     @media (min-width: 1024px) {
       margin-left: 10%;
-      bottom: 92%;
+      bottom: 90%;
     }
     &:hover {
       opacity: 0;
@@ -46,12 +71,11 @@ section img {
   }
   .icone-plein-menu {
     position: absolute;
-    margin-left: 6%;
-    padding-right: 2%;
+    margin-left: 8.1%;
     opacity: 0;
     @media (min-width: 1024px) {
       margin-left: 10%;
-      bottom: 92%;
+      bottom: 90%;
     }
     &:hover {
       transform: scale(1.1);
@@ -65,9 +89,9 @@ section img {
 }
 
 .carte-menu h2 {
-  font-size: 3em;
+  font-size: 1.3em;
   border-bottom: 3px solid $tertiaire ;
-  width: 10%;
+  width: 15%;
   margin-top: 2em;
   @media (min-width: 1024px) {
     font-size: 1.7em;
@@ -94,48 +118,49 @@ section img {
   animation-fill-mode: both;
   cursor: pointer;
   position: relative;
-  width: 95%;
+  width: 90%;
   background-color: white;
-  border-radius: 35px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   box-shadow: 0 0 20px #0000002e;
-  padding-left: 2em;
+  padding-left: 1em;
+  margin-bottom: 1em;
   @media(min-width: 1024px) {
     width: 30%;
     margin-right: 0.5em;
-    margin-bottom: 1em;
-    border-radius: 20px;
     display: inline-block;
   }
     .detail-menu {
       position: relative;
     }
     h3 {
-      font-size: 2.4em;
-      padding-top: 1em;
+      width: 80%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 1.2em;
+      padding-top: .5em;
       font-weight: bolder;
-      @media (min-width: 1024px) {
-        font-size: 1.3em;
-        padding-top: 0;
-      }
     }
     p {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      padding-bottom: .7em;
-      width: 90%;
-      font-size: 3em;
-      @media (min-width: 1024px) {
-        font-size: 1em;
-      }
+      padding-bottom: 0.5em;
+      margin-top: -.5em;
+      width: 80%;
+      font-size: 1em;
     } 
     h4 {
       position: absolute;
-      top: 20%;
-      left: 90%;
-      font-size: 3.5em;
+      top: 30%;
+      left: 85%;
+      font-size: 1em;
       @media (min-width: 1024px) {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
     }
     .animation-container {
@@ -143,36 +168,35 @@ section img {
       height: 100%;
       width: 0;
       background-color: $tertiaire;
-      border-radius: 0 35px 35px 0;
+      border-radius: 0 20px 20px 0;
+      -webkit-border-radius: 0 20px 20px 0;
+      -moz-border-radius: 0 20px 20px 0;
+      -ms-border-radius: 0 20px 20px 0;
+      -o-border-radius: 0 20px 20px 0;
       position: absolute;
       right: 0;
       top: 0;
-      @media (min-width: 1024px) {
-        right: 0;
-        top: 0;
-        border-radius: 0 20px 20px 0;
-      }
     }
     .fa-check-circle {
       position: absolute;
-      right: 1em;
-      top: 35%;
+      right: 0.7em;
+      top: 30%;
       opacity: 0;
       color: white;
-      font-size: 4.2em;
+      font-size: 1.5em;
       @media (min-width: 1024px) {
-        font-size: 2.4em;
-        right: 0.5em;
+        font-size: 2em;
+        right: 12%;
       }
     }
     &:hover {
       .fa-check-circle {
         opacity: 1;
-        animation: rotation .5s linear ;
-        -webkit-animation: rotation .5s linear ;
-      }
+        animation: rotation 0.5s linear ;
+        -webkit-animation: rotation 0.5s linear ;
+}
       .animation-container /*background icone check*/ {
-        width: 17%;
+        width: 15%;
       }
       p {
         width: 70%;

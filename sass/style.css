@@ -1,5 +1,5 @@
-body h1 {
-  font-family: 'roboto', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 body a {
@@ -11,13 +11,14 @@ body li {
 }
 
 .pied-de-page h3 {
-  font-family: 'shrikhand' , cursive;
+  font-family: 'Shrikhand';
 }
 
 .loader {
-  position: absolute;
-  width: 99%;
+  position: fixed;
+  width: 100%;
   height: 100%;
+  z-index: 10000;
   background: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,9 +59,10 @@ body li {
 }
 
 .lettre {
+  margin-bottom: 5em;
   color: #9356dc;
-  font-size: 90px;
-  letter-spacing: 25px;
+  font-size: 3em;
+  letter-spacing: 5px;
   font-family: 'shrikhand' , cursive;
   animation: .5s flash linear infinite;
   -webkit-animation: .5s flash linear infinite;
@@ -138,8 +140,8 @@ body li {
 
 .pied-de-page {
   background-color: #353535;
-  padding-top: 2em;
-  padding-bottom: 7em;
+  padding-top: 1em;
+  padding-bottom: 3em;
 }
 
 @media (min-width: 1024px) {
@@ -150,16 +152,9 @@ body li {
 
 .pied-de-page h3 {
   color: white;
-  margin-left: 3em;
-  padding-top: 2em;
+  margin-left: 1em;
   font-size: 2em;
   font-weight: normal;
-}
-
-@media (min-width: 1024px) {
-  .pied-de-page h3 {
-    padding-top: 0.1em;
-  }
 }
 
 .pied-de-page a {
@@ -167,106 +162,102 @@ body li {
 }
 
 .pied-de-page li {
-  margin-left: 3em;
+  margin-left: 1em;
   margin-bottom: 1em;
 }
 
 .pied-de-page i {
   color: white;
-  padding-right: 3em;
+  padding-right: 1em;
 }
 
 header .logo {
   margin-left: 20%;
-  margin-top: 2em;
-  width: 50%;
-  padding-bottom: 2em;
+  margin-top: 1.7em;
+  width: 60%;
 }
 
 @media (min-width: 1024px) {
   header .logo {
-    width: 20em;
-    margin-left: 40%;
-  }
-}
-
-.fa-arrow-left {
-  /*uniquement menu resto*/
-  position: absolute;
-  left: 1px;
-  top: 1em;
-  font-size: 3em;
-  margin-left: 1em;
-  color: black;
-}
-
-.formulaire {
-  /*recherche en fonction de la ville*/
-  width: 100%;
-  height: 8em;
-  margin-top: -2em;
-  text-align: center;
-  background-color: #eaeaea;
-  border: 1px solid #eaeaea;
-  border-top: 1px solid grey;
-}
-
-@media (min-width: 1024px) {
-  .formulaire {
-    height: 4em;
-  }
-}
-
-section {
-  /*partie descriptif*/
-  background-color: #f6f6f6;
-  padding-bottom: 4em;
-  padding-top: 2em;
-}
-
-.fa-map-marker-alt {
-  position: relative;
-  margin-left: 30%;
-  top: 1em;
-  font-size: 3.5em;
-}
-
-@media (min-width: 1024px) {
-  .fa-map-marker-alt {
-    top: 0.7em;
-    font-size: 2.5em;
+    width: 25%;
     margin-left: 35%;
   }
 }
 
+.formulaire {
+  /*recherche en fonction de la ville*/
+  width: 99%;
+  height: 3.5em;
+  text-align: center;
+  background-color: lightgrey;
+  border: 1px solid #f6f6f6;
+  border-top: 1px solid grey;
+}
+
+section {
+  /*partie descriptif*/
+  height: 20em;
+  background-color: #f6f6f6;
+}
+
+.fa-map-marker-alt {
+  position: relative;
+  margin-left: 25%;
+  top: 1.2em;
+  font-size: 2em;
+}
+
+@media (min-width: 1024px) {
+  .fa-map-marker-alt {
+    margin-left: 40%;
+  }
+}
+
 ::-webkit-input-placeholder {
-  padding-left: 1.5em;
-  font-size: 3em;
+  padding-left: 15%;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 :-ms-input-placeholder {
-  padding-left: 1.5em;
-  font-size: 3em;
+  padding-left: 15%;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 ::-ms-input-placeholder {
-  padding-left: 1.5em;
-  font-size: 3em;
+  padding-left: 15%;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 ::placeholder {
-  padding-left: 1.5em;
-  font-size: 3em;
+  padding-left: 15%;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  ::-webkit-input-placeholder {
+    padding-left: 1%;
+  }
+  :-ms-input-placeholder {
+    padding-left: 1%;
+  }
+  ::-ms-input-placeholder {
+    padding-left: 1%;
+  }
+  ::placeholder {
+    padding-left: 1%;
+  }
+}
+
 .explorer h1 {
-  margin: 2em;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.4em;
+  margin: 0 2em;
+  padding-top: 2em;
+  font-weight: bolder;
 }
 
 .explorer p {
@@ -274,16 +265,11 @@ section {
   margin: 2em;
 }
 
-@media (min-width: 1024px) {
-  .explorer p {
-    font-size: 1.2em;
-  }
-}
-
 .bouton {
+  width: 60%;
   border-radius: 85px;
-  margin: 5em 10em;
-  padding: 2em;
+  margin: 3em;
+  padding: 1.5em 2em;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   text-align: center;
@@ -291,147 +277,172 @@ section {
 
 .bouton a {
   color: white;
-  font-weight: bold;
+  font-size: 1.1em;
 }
 
 @media (min-width: 1024px) {
   .bouton {
-    width: 15%;
-    margin-left: 40%;
+    width: 35%;
+    margin-left: 30%;
     margin-top: 2em;
     margin-bottom: 1em;
   }
 }
 
 .bouton:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(110%);
+  -webkit-box-shadow: 1px 1px 20px #9356dc;
+          box-shadow: 1px 1px 20px #9356dc;
+  -webkit-filter: brightness(110%);
 }
 
 article h2 {
-  margin-left: 2em;
-  margin-top: 4em;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 @media (min-width: 1024px) {
   article h2 {
-    margin-top: 1em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-top: 0;
   }
 }
 
 .fonctionnement li {
-  background-color: #eaeaea;
-  -webkit-box-shadow: 0 0 20px #0c0c0c2e;
-          box-shadow: 0 0 20px #0c0c0c2e;
-  margin: 1em 3em 4em 3em;
-  border-radius: 30px;
-  padding: 3.5em 0;
-  font-weight: bold;
+  width: 90%;
+  padding: 1.5em 1em;
+  margin-top: 2em;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: -5px 5px 5px grey;
+          box-shadow: -5px 5px 5px grey;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 @media (min-width: 1024px) {
   .fonctionnement li {
-    padding: 1.2em;
-    margin-right: .5em;
+    width: 30%;
+    padding: 1.5em 0.5em;
+    margin-right: 0.5em;
     display: inline-block;
   }
 }
 
 .fonctionnement li:hover {
-  -webkit-box-shadow: 0 0 20px #ff79da;
-          box-shadow: 0 0 20px #ff79da;
   background-color: #ff79da;
-  filter: brightness(140%);
-  -webkit-filter: brightness(140%);
+  -webkit-box-shadow: -10px 10px 10px #9356dc;
+          box-shadow: -10px 10px 10px #9356dc;
 }
 
 .fonctionnement i {
+  font-size: 1.3em;
+  margin-right: 1.5em;
   color: grey;
-  margin-right: 4em;
 }
 
 @media (min-width: 1024px) {
   .fonctionnement i {
-    margin: 0.5em;
-    font-size: 2em;
+    margin-right: 0.5em;
   }
 }
 
 .fonctionnement a {
   color: black;
-  margin-left: 5em;
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement a {
-    margin-left: 0.1em;
-    width: 40%;
-  }
+  font-weight: bold;
+  margin-left: 5%;
 }
 
 .numero {
-  color: white;
   display: inline;
-  margin-right: 1.5em;
-  padding: 1.2em;
-  font-size: 1.5em;
+  position: relative;
+  right: 15%;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.8em 1em;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   background-color: #9356dc;
 }
 
+.fa-arrow-left {
+  /*fleche de retour*/
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  color: black;
+}
+
 @media (min-width: 1024px) {
-  .numero {
-    margin-right: 1em;
-    font-size: 1em;
+  .fa-arrow-left {
+    font-size: 3em;
+  }
+}
+
+.logo-carte {
+  width: 60%;
+  margin-top: 1em;
+  margin-left: 20%;
+  position: absolute;
+  top: 1%;
+}
+
+@media (min-width: 1024px) {
+  .logo-carte {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3em;
   }
 }
 
 section img {
-  width: 99%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 10em;
-  z-index: 0;
 }
 
 @media (min-width: 1024px) {
   section img {
-    height: 40em;
-    top: 8em;
+    height: 25em;
+  }
+}
+
+.page-menu {
+  height: 95em;
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 1024px) {
+  .page-menu {
+    height: auto;
   }
 }
 
 .carte-restaurant {
   position: relative;
   z-index: 1;
-  top: 30em;
-  margin-bottom: 30em;
-  width: 99%;
-  background-color: #eaeaea;
-  border-radius: 10em 10em 0 0;
-  padding: 1em 0 4em 0.7em;
-}
-
-@media (min-width: 1024px) {
-  .carte-restaurant {
-    border-radius: 5em 5em 0 0;
-  }
+  bottom: 4em;
+  padding: 1em 0 0 0.7em;
+  background-color: #f6f6f6;
+  border-radius: 5em 5em 0 0;
+  -webkit-border-radius: 5em 5em 0 0;
+  -moz-border-radius: 5em 5em 0 0;
+  -ms-border-radius: 5em 5em 0 0;
+  -o-border-radius: 5em 5em 0 0;
 }
 
 .carte-restaurant h1 {
   font-family: 'shrikhand';
   font-weight: lighter;
-  font-size: 4em;
-  margin-left: 0.5em;
+  font-size: 1.8em;
 }
 
 @media (min-width: 1024px) {
@@ -443,14 +454,13 @@ section img {
 
 .carte-restaurant .icone-vide-menu {
   position: absolute;
-  margin-left: 6%;
-  padding-right: 2%;
+  margin-left: 8%;
 }
 
 @media (min-width: 1024px) {
   .carte-restaurant .icone-vide-menu {
     margin-left: 10%;
-    bottom: 92%;
+    bottom: 90%;
   }
 }
 
@@ -460,15 +470,14 @@ section img {
 
 .carte-restaurant .icone-plein-menu {
   position: absolute;
-  margin-left: 6%;
-  padding-right: 2%;
+  margin-left: 8.1%;
   opacity: 0;
 }
 
 @media (min-width: 1024px) {
   .carte-restaurant .icone-plein-menu {
     margin-left: 10%;
-    bottom: 92%;
+    bottom: 90%;
   }
 }
 
@@ -485,9 +494,9 @@ section img {
 }
 
 .carte-menu h2 {
-  font-size: 3em;
+  font-size: 1.3em;
   border-bottom: 3px solid #99e2d0;
-  width: 10%;
+  width: 15%;
   margin-top: 2em;
 }
 
@@ -594,20 +603,23 @@ section img {
           animation-fill-mode: both;
   cursor: pointer;
   position: relative;
-  width: 95%;
+  width: 90%;
   background-color: white;
-  border-radius: 35px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   -webkit-box-shadow: 0 0 20px #0000002e;
           box-shadow: 0 0 20px #0000002e;
-  padding-left: 2em;
+  padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 1024px) {
   .description-menu {
     width: 30%;
     margin-right: 0.5em;
-    margin-bottom: 1em;
-    border-radius: 20px;
     display: inline-block;
   }
 }
@@ -617,43 +629,35 @@ section img {
 }
 
 .description-menu h3 {
-  font-size: 2.4em;
-  padding-top: 1em;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.2em;
+  padding-top: .5em;
   font-weight: bolder;
-}
-
-@media (min-width: 1024px) {
-  .description-menu h3 {
-    font-size: 1.3em;
-    padding-top: 0;
-  }
 }
 
 .description-menu p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  padding-bottom: .7em;
-  width: 90%;
-  font-size: 3em;
-}
-
-@media (min-width: 1024px) {
-  .description-menu p {
-    font-size: 1em;
-  }
+  padding-bottom: 0.5em;
+  margin-top: -.5em;
+  width: 80%;
+  font-size: 1em;
 }
 
 .description-menu h4 {
   position: absolute;
-  top: 20%;
-  left: 90%;
-  font-size: 3.5em;
+  top: 30%;
+  left: 85%;
+  font-size: 1em;
 }
 
 @media (min-width: 1024px) {
   .description-menu h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
@@ -663,44 +667,40 @@ section img {
   height: 100%;
   width: 0;
   background-color: #99e2d0;
-  border-radius: 0 35px 35px 0;
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-@media (min-width: 1024px) {
-  .description-menu .animation-container {
-    right: 0;
-    top: 0;
-    border-radius: 0 20px 20px 0;
-  }
-}
-
 .description-menu .fa-check-circle {
   position: absolute;
-  right: 1em;
-  top: 35%;
+  right: 0.7em;
+  top: 30%;
   opacity: 0;
   color: white;
-  font-size: 4.2em;
+  font-size: 1.5em;
 }
 
 @media (min-width: 1024px) {
   .description-menu .fa-check-circle {
-    font-size: 2.4em;
-    right: 0.5em;
+    font-size: 2em;
+    right: 12%;
   }
 }
 
 .description-menu:hover .fa-check-circle {
   opacity: 1;
-  animation: rotation .5s linear;
-  -webkit-animation: rotation .5s linear;
+  animation: rotation 0.5s linear;
+  -webkit-animation: rotation 0.5s linear;
 }
 
 .description-menu:hover .animation-container {
-  width: 17%;
+  width: 15%;
 }
 
 .description-menu:hover p {
@@ -747,53 +747,46 @@ section img {
 }
 
 #restaurants {
-  background-color: #eaeaea;
-  margin-top: 8em;
+  background-color: #f6f6f6;
+  margin-top: 3em;
   padding-bottom: 6em;
-}
-
-@media (min-width: 1024px) {
-  #restaurants {
-    margin-top: 3em;
-    padding-bottom: 1em;
-  }
 }
 
 #restaurants h2 {
   padding-top: 3em;
-  margin-left: 2em;
-  margin-bottom: 3em;
-}
-
-@media (min-width: 1024px) {
-  #restaurants h2 {
-    padding-top: 1em;
-    margin-bottom: 1em;
-  }
+  margin-left: 1em;
+  margin-bottom: 1em;
+  font-weight: bolder;
 }
 
 .vignette-restaurant {
   width: 90%;
-  margin-left: 3em;
+  margin-left: 1em;
   margin-bottom: 3em;
   position: relative;
   background-color: white;
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
+  -webkit-box-shadow: -5px 5px 5px grey;
+          box-shadow: -5px 5px 5px grey;
 }
 
 @media (min-width: 1024px) {
   .vignette-restaurant {
     display: inline-block;
-    width: 20%;
+    margin-left: 5em;
+    width: 35%;
     height: 15em;
   }
 }
 
+.vignette-restaurant:hover {
+  -webkit-box-shadow: -5px 10px 10px black;
+          box-shadow: -5px 10px 10px black;
+}
+
 .vignette-restaurant img {
   width: 100%;
-  height: 22em;
+  height: 12em;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px 30px 0 0;
@@ -806,28 +799,21 @@ section img {
 }
 
 .vignette-restaurant h3 {
-  margin-top: 0.5em;
-  margin-left: 1.5em;
+  margin-top: .5em;
+  margin-left: 1em;
   color: black;
 }
 
-@media (min-width: 1024px) {
-  .vignette-restaurant h3 {
-    margin-left: 1em;
-  }
-}
-
 .vignette-restaurant h4 {
-  margin-left: 1.5em;
-  margin-top: -1em;
-  padding-bottom: 2em;
+  margin-left: 1em;
+  margin-top: -0.5em;
+  padding-bottom: 1em;
   color: black;
   font-weight: normal;
 }
 
 @media (min-width: 1024px) {
   .vignette-restaurant h4 {
-    margin-left: 1em;
     font-size: 1em;
   }
 }
@@ -837,18 +823,12 @@ section img {
   color: #008766;
   padding: 0.5em;
   position: absolute;
-  font-size: 3em;
+  font-size: 1em;
   margin-left: 65%;
 }
 
-@media (min-width: 1024px) {
-  .nouveaute p {
-    font-size: 1em;
-  }
-}
-
 .icone-vide {
-  font-size: 4em;
+  font-size: 1.7em;
   position: absolute;
   left: 85%;
   bottom: 10%;
@@ -868,7 +848,7 @@ section img {
 .icone-plein {
   opacity: 0;
   position: absolute;
-  font-size: 4em;
+  font-size: 1.7em;
   left: 85%;
   bottom: 10%;
 }
