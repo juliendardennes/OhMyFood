@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto';
 }
 
 body a {
@@ -10,7 +10,8 @@ body li {
   list-style: none;
 }
 
-.pied-de-page h3 {
+.pied-de-page h3,
+.carte-restaurant h1 {
   font-family: 'Shrikhand';
 }
 
@@ -291,8 +292,8 @@ section {
 
 .bouton:hover {
   filter: brightness(110%);
-  -webkit-box-shadow: 1px 1px 20px #9356dc;
-          box-shadow: 1px 1px 20px #9356dc;
+  -webkit-box-shadow: -5px 5px 5px gray;
+          box-shadow: -5px 5px 5px gray;
   -webkit-filter: brightness(110%);
 }
 
@@ -333,21 +334,15 @@ article h2 {
 
 .fonctionnement li:hover {
   background-color: #ff79da;
-  -webkit-box-shadow: -10px 10px 10px #9356dc;
-          box-shadow: -10px 10px 10px #9356dc;
+  -webkit-box-shadow: -5px 5px 10px #9356dc;
+          box-shadow: -5px 5px 10px #9356dc;
 }
 
 .fonctionnement i {
   font-size: 1.3em;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 10%;
   color: grey;
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement i {
-    margin-right: 0.5em;
-  }
 }
 
 .fonctionnement a {
@@ -375,9 +370,6 @@ article h2 {
 .fa-arrow-left {
   /*fleche de retour*/
   font-size: 1.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 10%;
   padding-bottom: 1em;
   margin-top: 1.5em;
@@ -391,17 +383,17 @@ article h2 {
 }
 
 .logo-carte {
-  width: 60%;
-  margin-top: 1em;
-  margin-left: 20%;
   position: absolute;
   top: 1%;
+  width: 60%;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
 @media (min-width: 1024px) {
   .logo-carte {
     width: 40%;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: 3em;
   }
 }
@@ -443,7 +435,6 @@ section img {
 }
 
 .carte-restaurant h1 {
-  font-family: 'shrikhand';
   font-weight: lighter;
   font-size: 1.8em;
 }
@@ -613,8 +604,8 @@ section img {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
+  -webkit-box-shadow: -5px 5px 5px grey;
+          box-shadow: -5px 5px 5px grey;
   padding-left: 1em;
   margin-bottom: 1em;
 }

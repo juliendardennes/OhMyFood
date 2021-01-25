@@ -5,7 +5,7 @@ $background: #f6f6f6;
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto';
   a {
     text-decoration: none;
   }
@@ -14,7 +14,8 @@ body {
   }
 }
 
-.pied-de-page h3 {
+.pied-de-page h3,
+.carte-restaurant h1 {
   font-family: 'Shrikhand' ;
 }
 

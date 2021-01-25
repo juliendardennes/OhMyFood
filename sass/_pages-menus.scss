@@ -1,6 +1,5 @@
 .fa-arrow-left { /*fleche de retour*/
   font-size: 1.5em;
-  display: flex;
   width: 10%;
   padding-bottom: 1em;
   margin-top: 1.5em;
@@ -10,14 +9,14 @@
   }
 }
 .logo-carte {
-  width: 60%;
-  margin-top: 1em;
-  margin-left: 20%;
   position: absolute;
   top: 1%;
+  width: 60%;
+  margin-top: 5%;
+  margin-left: 10%;
   @media (min-width: 1024px) {
     width: 40%;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: 3em;
   }
 }
@@ -50,7 +49,6 @@ section img {
   -ms-border-radius: 5em 5em 0 0;
   -o-border-radius: 5em 5em 0 0;
   h1 {
-    font-family: 'shrikhand';
     font-weight: lighter;
     font-size: 1.8em;
     @media (min-width: 1024px) {
@@ -125,7 +123,7 @@ section img {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 0 0 20px #0000002e;
+  box-shadow: -5px 5px 5px grey;
   padding-left: 1em;
   margin-bottom: 1em;
   @media(min-width: 1024px) {

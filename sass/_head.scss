@@ -74,7 +74,7 @@ section {     /*partie descriptif*/
   }
   &:hover {
     filter: brightness(110%);
-    box-shadow: 1px 1px 20px $primaire;
+    box-shadow: -5px 5px 5px gray;
     -webkit-filter: brightness(110%);
 }
 }
@@ -108,17 +108,14 @@ article h2 {
     }
     &:hover {
       background-color: $secondaire;
-      box-shadow: -10px 10px 10px $primaire;
+      box-shadow: -5px 5px 10px $primaire;
     }
   }
   i/*icone*/ {
     font-size: 1.3em;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     color: grey;
-    @media(min-width: 1024px) {
-      margin-right: 0.5em;
-    }
   }
   a {
     color: black;
