@@ -411,7 +411,7 @@ section img {
 }
 
 .page-menu {
-  height: 95em;
+  height: auto;
   background-color: #f6f6f6;
 }
 

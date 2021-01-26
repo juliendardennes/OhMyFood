@@ -30,7 +30,7 @@ section img {
 }
 
 .page-menu {
-  height: 95em;
+  height: auto;
   background-color: $background;
   @media (min-width: 1024px) {
     height: auto;
